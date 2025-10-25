@@ -556,7 +556,6 @@ export const UnsupportedArmorSkills: Record<SkillName, Skill> = {
   ["Botanist"]: skill(4),
   ["Cliffhanger"]: skill(1),
   ["Constitution"]: skill(5),
-  ["Defense Boost"]: skill(7),
   ["Divine Blessing"]: skill(3),
   ["Dragon Resistance"]: skill(3),
   ["Earplugs"]: skill(3),
@@ -593,7 +592,6 @@ export const UnsupportedArmorSkills: Record<SkillName, Skill> = {
   ["Stench Resistance"]: skill(2),
   ["Stun Resistance"]: skill(3),
   ["Survival Expert"]: skill(3),
-  ["Thunder Resistance"]: skill(3),
   ["Tool Specialist"]: skill(5),
   ["Tremor Resistance"]: skill(3),
   ["Water Resistance"]: skill(3),
@@ -749,6 +747,17 @@ export const ArmorSkills: Record<SkillName, Skill | SkillWeaponGroup> = {
       3: { name: "Counterstrike 3", attack: 25 },
     },
   },
+  "Defense Boost": {
+    levels: {
+      1: { name: "Defense Boost 1", defense: 5 },
+      2: { name: "Defense Boost 2", defense: 10 },
+      3: { name: "Defense Boost 3", defense: 10, defenseMul: 1.05 },
+      4: { name: "Defense Boost 4", defense: 20, defenseMul: 1.05, allRes: 3 },
+      5: { name: "Defense Boost 5", defense: 20, defenseMul: 1.08, allRes: 3 },
+      6: { name: "Defense Boost 6", defense: 25, defenseMul: 1.08, allRes: 5 },
+      7: { name: "Defense Boost 7", defense: 25, defenseMul: 1.1, allRes: 5 },
+    },
+  },
   ["Elemental Absorption"]: {
     uptime: true,
     groups: [
@@ -834,6 +843,13 @@ export const ArmorSkills: Record<SkillName, Skill | SkillWeaponGroup> = {
       3: { name: "Resentment 3", attack: 15 },
       4: { name: "Resentment 4", attack: 20 },
       5: { name: "Resentment 5", attack: 25 },
+    },
+  },
+  "Thunder Resistance": {
+    levels: {
+      1: { name: "Thunder Resistance 1", thunderRes: 6 },
+      2: { name: "Thunder Resistance 2", thunderRes: 12 },
+      3: { name: "Thunder Resistance 3", thunderRes: 20, defense: 10 },
     },
   },
   ["Weakness Exploit"]: {
