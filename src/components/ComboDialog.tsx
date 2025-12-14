@@ -9,6 +9,8 @@ import {
 } from "@/store/combo";
 import { ComboModeOptions } from "@/types";
 import { AttacksTable, Button, Notice, NumberDisplay, Select } from ".";
+import { ComboExportDialog } from "./ComboExportDialog";
+import { ComboImportDialog } from "./ComboImportDialog";
 import { ComboTable } from "./ComboTable";
 import { Dialog, DialogContent, DialogTrigger } from "./ui/Dialog";
 
@@ -52,24 +54,30 @@ export const ComboDialog = () => {
           <NumberDisplay label="Total Average">{totalDamage}</NumberDisplay>
           <NumberDisplay label="Total Hits">{totalHits}</NumberDisplay>
         </div>
-        <div className="flex justify-end gap-2">
-          <Button
-            size="sm"
-            variant="secondary"
-            onClick={() => setShowCombo(!showCombo)}
-          >
-            <ListIcon className="size-4" />
-            {showCombo ? "Show Attacks" : "Show Combo"}
-          </Button>
-          <Button
-            size="sm"
-            variant="secondary"
-            className="text-secondary"
-            onClick={reset}
-          >
-            <TimerResetIcon className="size-4" />
-            Reset
-          </Button>
+        <div className="flex justify-between gap-2">
+          <div className="flex gap-2">
+            <ComboImportDialog />
+            <ComboExportDialog />
+          </div>
+          <div className="flex gap-2">
+            <Button
+              size="sm"
+              variant="secondary"
+              onClick={() => setShowCombo(!showCombo)}
+            >
+              <ListIcon className="size-4" />
+              {showCombo ? "Show Attacks" : "Show Combo"}
+            </Button>
+            <Button
+              size="sm"
+              variant="secondary"
+              className="text-secondary"
+              onClick={reset}
+            >
+              <TimerResetIcon className="size-4" />
+              Reset
+            </Button>
+          </div>
         </div>
         {showNotice && (
           <Notice>

@@ -4,6 +4,7 @@ import {
   ArtianInfusionOptions,
   ArtianTypeOptions,
   ArtianUpgradeOptions,
+  ComboModeOptions,
 } from "./types";
 
 export const importSchema = z.object({
@@ -30,6 +31,32 @@ export const importSchema = z.object({
   armsSlots: z.array(z.string().optional().nullable()).max(3).optional(),
   waistSlots: z.array(z.string().optional().nullable()).max(3).optional(),
   legsSlots: z.array(z.string().optional().nullable()).max(3).optional(),
+  charmSlots: z.array(z.string().optional().nullable()).max(3).optional(),
+  charmSkills: z.array(z.tuple([z.string(), z.number().int()])).optional(),
   buffs: z.record(z.number().int()).default({}),
   uptime: z.record(z.string(), z.number().int().min(0).max(100)).optional(),
+  target: z
+    .object({
+      wound: z.boolean(),
+      Slash: z.number(),
+      Blunt: z.number(),
+      Shot: z.number(),
+      Fire: z.number(),
+      Water: z.number(),
+      Thunder: z.number(),
+      Ice: z.number(),
+      Dragon: z.number(),
+    })
+    .optional(),
+  combo: z
+    .object({
+      mode: z.enum(ComboModeOptions),
+      attacks: z.array(z.string()).optional(),
+    })
+    .optional(),
+});
+
+export const comboImportSchema = z.object({
+  mode: z.enum(ComboModeOptions),
+  attacks: z.array(z.string()),
 });

@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { produce } from "immer";
 import { create } from "zustand";
 import {
@@ -318,7 +319,8 @@ export const useComputed = () => {
     charmSkills,
   } = useBuild();
 
-  const equipment = [helm, body, arms, waist, legs].filter(
+  return useMemo(() => {
+    const equipment = [helm, body, arms, waist, legs].filter(
     (n): n is Armor => !!n,
   );
 
@@ -712,23 +714,47 @@ export const useComputed = () => {
     },
   );
 
-  // TODO: separate these into slices
-  return {
-    weapon,
-    skillPoints,
-    groupPoints,
-    buffs,
-    uiAttack,
-    uiElement,
-    uiStatus,
-    uiAffinity,
-    critMulti: baseCritMulti,
-    eleCritMulti: baseEleCritMulti,
-    calculateAtk: calcAtk,
-    effectiveRaw,
-    effectiveEle,
-    head,
-    weights,
-    totalWeight,
-  };
+    // TODO: separate these into slices
+    return {
+      weapon,
+      skillPoints,
+      groupPoints,
+      buffs,
+      uiAttack,
+      uiElement,
+      uiStatus,
+      uiAffinity,
+      critMulti: baseCritMulti,
+      eleCritMulti: baseEleCritMulti,
+      calculateAtk: calcAtk,
+      effectiveRaw,
+      effectiveEle,
+      head,
+      weights,
+      totalWeight,
+    };
+  }, [
+    w,
+    artian,
+    otherBuffs,
+    helm,
+    body,
+    arms,
+    waist,
+    legs,
+    weaponSlots,
+    helmSlots,
+    bodySlots,
+    armsSlots,
+    waistSlots,
+    legsSlots,
+    charmSlots,
+    disabled,
+    flags,
+    target,
+    manualSkills,
+    uptime,
+    manualSharpness,
+    charmSkills,
+  ]);
 };

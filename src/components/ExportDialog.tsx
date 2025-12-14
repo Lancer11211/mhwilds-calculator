@@ -4,6 +4,7 @@ import { SaveIcon } from "lucide-react";
 import { useMemo, useState } from "react";
 import { CombinedBuffs } from "@/data";
 import { useBuild } from "@/store/builder";
+import { useCombo } from "@/store/combo";
 import text from "@/text";
 import { Notice } from "./Notice";
 import { Button } from "./ui/Button";
@@ -27,9 +28,14 @@ export const ExportDialog = () => {
     armsSlots,
     waistSlots,
     legsSlots,
+    charmSlots,
+    charmSkills,
     otherBuffs,
     uptime,
+    target,
   } = useBuild();
+
+  const { mode: comboMode, dynamic, snapshot } = useCombo();
 
   const [open, setOpen] = useState(false);
 
@@ -62,6 +68,9 @@ export const ExportDialog = () => {
             waistSlots.length > 0 ? waistSlots.map((s) => s?.name) : undefined,
           legsSlots:
             legsSlots.length > 0 ? legsSlots.map((s) => s?.name) : undefined,
+          charmSlots:
+            charmSlots.length > 0 ? charmSlots.map((s) => s?.name) : undefined,
+          charmSkills: charmSkills.length > 0 ? charmSkills : undefined,
           buffs: Object.entries(otherBuffs).reduce(
             (a, [k, v]) => {
               const buff = CombinedBuffs[k];
@@ -73,6 +82,21 @@ export const ExportDialog = () => {
             {} as Record<string, number>,
           ),
           uptime,
+          target,
+          combo:
+            dynamic.length > 0 || snapshot.length > 0
+              ? {
+                  mode: comboMode,
+                  attacks:
+                    comboMode === "Dynamic"
+                      ? dynamic.flatMap((a) =>
+                          Array(a.count).fill(a.name),
+                        )
+                      : snapshot.flatMap((a) =>
+                          Array(a.count).fill(a.name),
+                        ),
+                }
+              : undefined,
         },
         null,
         2,
@@ -92,8 +116,14 @@ export const ExportDialog = () => {
       armsSlots,
       waistSlots,
       legsSlots,
+      charmSlots,
+      charmSkills,
       otherBuffs,
       uptime,
+      target,
+      comboMode,
+      dynamic,
+      snapshot,
     ],
   );
 

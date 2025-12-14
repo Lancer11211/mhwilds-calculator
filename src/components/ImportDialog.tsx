@@ -5,10 +5,13 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { ZodError } from "zod";
 import { CombinedBuffs } from "@/data";
 import { Armors } from "@/data/armor";
+import Attacks, { OtherAttacks } from "@/data/attacks";
 import { Charms } from "@/data/charms";
 import { Decorations } from "@/data/decorations";
 import Weapons from "@/data/weapons";
 import { useBuild } from "@/store/builder";
+import { useCombo } from "@/store/combo";
+import { useAddAttack } from "@/store/combo";
 import text from "@/text";
 import { Armor, Decoration, Weapon } from "@/types";
 import { importSchema } from "@/zod";
@@ -37,10 +40,16 @@ export const ImportDialog = () => {
     setWaistDecoration,
     setLegsDecoration,
     setWeaponDecoration,
+    setCharmDecoration,
+    setCharmSkill,
     setOtherBuff,
     emptyBuffs,
     setUptimes,
+    setTarget,
   } = useBuild();
+
+  const comboStore = useCombo();
+  const addAttack = useAddAttack();
 
   const [open, setOpen] = useState(false);
   const [data, setData] = useState("");
@@ -148,8 +157,28 @@ export const ImportDialog = () => {
 
       if (d.charm) {
         const charm = Charms.find((c) => c.name === d.charm);
-        if (charm) setCharm(charm);
-        else warnings.push(`'${d.charm}' not found.`);
+        if (charm) {
+          setCharm(charm);
+        } else {
+          warnings.push(`'${d.charm}' not found.`);
+        }
+      }
+
+      if (d.charmSlots) {
+        d.charmSlots.forEach((name, i) => {
+          if (!name) return;
+          const dc = Decorations.find((d) => d.name === name && d.type === "Equipment");
+          if (!dc) {
+            warnings.push(`'${name}' not found.`);
+          }
+          if (dc) setCharmDecoration(i)(dc);
+        });
+      }
+
+      if (d.charmSkills) {
+        d.charmSkills.forEach((skill, i) => {
+          setCharmSkill(i)(skill);
+        });
       }
 
       const w = Object.values(Weapons)
@@ -181,6 +210,25 @@ export const ImportDialog = () => {
       }
 
       if (d.uptime) setUptimes(d.uptime);
+
+      if (d.target) setTarget(d.target);
+
+      if (d.combo && d.combo.attacks && w) {
+        comboStore.reset();
+        comboStore.setComboMode(d.combo.mode);
+
+        const weaponAttacks = Attacks[w.type];
+        const allAttacks = [...weaponAttacks, ...Object.values(OtherAttacks)];
+
+        d.combo.attacks.forEach((attackName) => {
+          const attack = allAttacks.find((a) => a.name === attackName);
+          if (attack) {
+            addAttack(attack);
+          } else {
+            warnings.push(`Attack '${attackName}' not found for ${w.type}.`);
+          }
+        });
+      }
 
       if (warnings.length === 0) {
         toast({ title: "Build imported.", type: "success" });
@@ -228,9 +276,14 @@ export const ImportDialog = () => {
     setArmsDecoration,
     setWaistDecoration,
     setLegsDecoration,
+    setCharmDecoration,
+    setCharmSkill,
     emptyBuffs,
     setOtherBuff,
     setUptimes,
+    setTarget,
+    comboStore,
+    addAttack,
   ]);
 
   return (

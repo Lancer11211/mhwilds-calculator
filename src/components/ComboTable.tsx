@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { round } from "@/model";
 import { useComputed } from "@/store/builder";
 import { useCombo } from "@/store/combo";
@@ -6,6 +7,15 @@ import { Table, TableCell, TableHeadRow, TableRow } from "./Table";
 export const ComboTable = ({ disabled }: { disabled?: boolean }) => {
   const { mode, dynamic, snapshot, removeDynamic, removeSnapshot } = useCombo();
   const { calculateAtk } = useComputed();
+
+  const dynamicWithDamage = useMemo(() => {
+    return dynamic.map(({ count, ...a }, i) => ({
+      ...a,
+      count,
+      index: i,
+      ...calculateAtk(a),
+    }));
+  }, [dynamic, calculateAtk]);
 
   return (
     <Table>
@@ -25,28 +35,27 @@ export const ComboTable = ({ disabled }: { disabled?: boolean }) => {
       </thead>
       <tbody>
         {mode === "Dynamic" &&
-          dynamic.map(({ count, ...a }, i) => {
-            const { hit, crit, avg } = calculateAtk(a);
+          dynamicWithDamage.map((a) => {
             return (
               <TableRow
-                key={`${a.name}-${i}`}
-                onClick={disabled ? undefined : () => removeDynamic(i)}
+                key={`${a.name}-${a.index}`}
+                onClick={disabled ? undefined : () => removeDynamic(a.index)}
               >
                 <TableCell small className="w-full text-left">
                   {a.name}
-                  {count > 1 && ` x${count}`}
+                  {a.count > 1 && ` x${a.count}`}
                 </TableCell>
                 <TableCell small className="text-right">
-                  {round(hit * count)}
+                  {round(a.hit * a.count)}
                 </TableCell>
                 <TableCell small className="text-right">
-                  {!a.cantCrit && round(crit * count)}
+                  {!a.cantCrit && round(a.crit * a.count)}
                 </TableCell>
                 <TableCell
                   small
                   className="text-primary text-right font-medium"
                 >
-                  {round(avg * count, 2)}
+                  {round(a.avg * a.count, 2)}
                 </TableCell>
               </TableRow>
             );
