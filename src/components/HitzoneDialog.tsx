@@ -29,7 +29,7 @@ export const HitzoneDialog = () => {
       <DialogContent
         title="Select Monster"
         setOpen={setOpen}
-        className="sm:h-fit"
+        className="sm:h-auto sm:max-h-[85dvh]"
       >
         <Select
           options={[...Object.keys(Monsters)]}
