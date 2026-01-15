@@ -356,12 +356,12 @@ export const useComputed = () => {
 
   const groupPoints = {
     ...equipment.reduce<Record<SkillName, number>>((acc, i) => {
-      const { groupSkill, seriesSkill } = i;
+      const { groupSkill, seriesSkills } = i;
       if (groupSkill) {
         acc[groupSkill] = acc[groupSkill] ? acc[groupSkill] + 1 : 1;
       }
-      if (seriesSkill) {
-        acc[seriesSkill] = acc[seriesSkill] ? acc[seriesSkill] + 1 : 1;
+      for (const ss of seriesSkills ?? []) {
+        acc[ss] = acc[ss] ? acc[ss] + 1 : 1;
       }
       return acc;
     }, {}),

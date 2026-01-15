@@ -1004,6 +1004,13 @@ export const SeriesSkills: Record<SkillName, SeriesSkill> = {
       4: { name: "Flamefete Boon II", attackMul: 1.09 },
     },
   },
+  Gogmapocalypse: {
+    uptime: true,
+    levels: {
+      2: { name: "Mutual Hostility I", element: 20, eleMul: 20 },
+      4: { name: "Mutual Hostility II", element: 40, eleMul: 30 },
+    },
+  },
   ["Gore Magala's Tyranny"]: {
     levels: {
       2: { name: "Black Eclipse I" },

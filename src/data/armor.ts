@@ -1360,7 +1360,7 @@ export const Armors: Armor[] = [
     name: "Doshaguma Helm α",
     type: "Helm",
     slots: [2, 1, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Fortifying Pelt",
     skills: {
       "Free Meal": 2,
@@ -1371,7 +1371,7 @@ export const Armors: Armor[] = [
     name: "Doshaguma Mail α",
     type: "Body",
     slots: [1, 0, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Fortifying Pelt",
     skills: {
       "Latent Power": 1,
@@ -1382,7 +1382,7 @@ export const Armors: Armor[] = [
     name: "Doshaguma Braces α",
     type: "Arms",
     slots: [2, 0, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Fortifying Pelt",
     skills: {
       "Stun Resistance": 2,
@@ -1393,7 +1393,7 @@ export const Armors: Armor[] = [
     name: "Doshaguma Coil α",
     type: "Waist",
     slots: [1, 0, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Fortifying Pelt",
     skills: {
       "Latent Power": 2,
@@ -1403,7 +1403,7 @@ export const Armors: Armor[] = [
     name: "Doshaguma Greaves α",
     type: "Legs",
     slots: [2, 1, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Fortifying Pelt",
     skills: {
       "Free Meal": 1,
@@ -1414,7 +1414,7 @@ export const Armors: Armor[] = [
     name: "Doshaguma Helm β",
     type: "Helm",
     slots: [2, 1, 1],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Alluring Pelt",
     skills: {
       "Free Meal": 1,
@@ -1425,7 +1425,7 @@ export const Armors: Armor[] = [
     name: "Doshaguma Mail β",
     type: "Body",
     slots: [1, 1, 1],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Alluring Pelt",
     skills: {
       "Latent Power": 1,
@@ -1435,7 +1435,7 @@ export const Armors: Armor[] = [
     name: "Doshaguma Braces β",
     type: "Arms",
     slots: [2, 1, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Alluring Pelt",
     skills: {
       "Stun Resistance": 1,
@@ -1446,7 +1446,7 @@ export const Armors: Armor[] = [
     name: "Doshaguma Coil β",
     type: "Waist",
     slots: [2, 2, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Alluring Pelt",
     skills: {
       "Latent Power": 1,
@@ -1456,7 +1456,7 @@ export const Armors: Armor[] = [
     name: "Doshaguma Greaves β",
     type: "Legs",
     slots: [2, 1, 1],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Alluring Pelt",
     skills: {
       "Free Meal": 1,
@@ -1562,7 +1562,7 @@ export const Armors: Armor[] = [
     name: "G. Fulgur Helm α",
     type: "Helm",
     slots: [0, 0, 0],
-    seriesSkill: "Fulgur Anjanath's Will",
+    seriesSkills: ["Fulgur Anjanath's Will"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Agitator: 2,
@@ -1573,7 +1573,7 @@ export const Armors: Armor[] = [
     name: "G. Fulgur Mail α",
     type: "Body",
     slots: [2, 0, 0],
-    seriesSkill: "Fulgur Anjanath's Will",
+    seriesSkills: ["Fulgur Anjanath's Will"],
     groupSkill: "Guardian's Pulse",
     skills: {
       "Maximum Might": 1,
@@ -1584,7 +1584,7 @@ export const Armors: Armor[] = [
     name: "G. Fulgur Vambraces α",
     type: "Arms",
     slots: [1, 0, 0],
-    seriesSkill: "Fulgur Anjanath's Will",
+    seriesSkills: ["Fulgur Anjanath's Will"],
     groupSkill: "Guardian's Pulse",
     skills: {
       "Maximum Might": 1,
@@ -1595,7 +1595,7 @@ export const Armors: Armor[] = [
     name: "G. Fulgur Coil α",
     type: "Waist",
     slots: [1, 1, 0],
-    seriesSkill: "Fulgur Anjanath's Will",
+    seriesSkills: ["Fulgur Anjanath's Will"],
     groupSkill: "Guardian's Pulse",
     skills: {
       "Stamina Surge": 1,
@@ -1606,7 +1606,7 @@ export const Armors: Armor[] = [
     name: "G. Fulgur Greaves α",
     type: "Legs",
     slots: [1, 0, 0],
-    seriesSkill: "Fulgur Anjanath's Will",
+    seriesSkills: ["Fulgur Anjanath's Will"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Coalescence: 1,
@@ -1617,7 +1617,7 @@ export const Armors: Armor[] = [
     name: "G. Fulgur Helm β",
     type: "Helm",
     slots: [2, 0, 0],
-    seriesSkill: "Fulgur Anjanath's Will",
+    seriesSkills: ["Fulgur Anjanath's Will"],
     groupSkill: "Guardian's Protection",
     skills: {
       Agitator: 2,
@@ -1627,7 +1627,7 @@ export const Armors: Armor[] = [
     name: "G. Fulgur Mail β",
     type: "Body",
     slots: [2, 1, 1],
-    seriesSkill: "Fulgur Anjanath's Will",
+    seriesSkills: ["Fulgur Anjanath's Will"],
     groupSkill: "Guardian's Protection",
     skills: {
       "Maximum Might": 1,
@@ -1637,7 +1637,7 @@ export const Armors: Armor[] = [
     name: "G. Fulgur Vambraces β",
     type: "Arms",
     slots: [2, 2, 0],
-    seriesSkill: "Fulgur Anjanath's Will",
+    seriesSkills: ["Fulgur Anjanath's Will"],
     groupSkill: "Guardian's Protection",
     skills: {
       "Maximum Might": 1,
@@ -1647,7 +1647,7 @@ export const Armors: Armor[] = [
     name: "G. Fulgur Coil β",
     type: "Waist",
     slots: [2, 2, 0],
-    seriesSkill: "Fulgur Anjanath's Will",
+    seriesSkills: ["Fulgur Anjanath's Will"],
     groupSkill: "Guardian's Protection",
     skills: {
       "Stamina Surge": 1,
@@ -1657,7 +1657,7 @@ export const Armors: Armor[] = [
     name: "G. Fulgur Greaves β",
     type: "Legs",
     slots: [2, 1, 0],
-    seriesSkill: "Fulgur Anjanath's Will",
+    seriesSkills: ["Fulgur Anjanath's Will"],
     groupSkill: "Guardian's Protection",
     skills: {
       Coalescence: 1,
@@ -1831,7 +1831,7 @@ export const Armors: Armor[] = [
     name: "Blango Helm α",
     type: "Helm",
     slots: [1, 1, 0],
-    seriesSkill: "Blangonga's Spirit",
+    seriesSkills: ["Blangonga's Spirit"],
     groupSkill: "Fortifying Pelt",
     skills: {
       "Wide-Range": 2,
@@ -1842,7 +1842,7 @@ export const Armors: Armor[] = [
     name: "Blango Mail α",
     type: "Body",
     slots: [0, 0, 0],
-    seriesSkill: "Blangonga's Spirit",
+    seriesSkills: ["Blangonga's Spirit"],
     groupSkill: "Fortifying Pelt",
     skills: {
       Agitator: 2,
@@ -1853,7 +1853,7 @@ export const Armors: Armor[] = [
     name: "Blango Vambraces α",
     type: "Arms",
     slots: [2, 0, 0],
-    seriesSkill: "Blangonga's Spirit",
+    seriesSkills: ["Blangonga's Spirit"],
     groupSkill: "Fortifying Pelt",
     skills: {
       Counterstrike: 1,
@@ -1864,7 +1864,7 @@ export const Armors: Armor[] = [
     name: "Blango Coil α",
     type: "Waist",
     slots: [1, 0, 0],
-    seriesSkill: "Blangonga's Spirit",
+    seriesSkills: ["Blangonga's Spirit"],
     groupSkill: "Fortifying Pelt",
     skills: {
       Agitator: 2,
@@ -1875,7 +1875,7 @@ export const Armors: Armor[] = [
     name: "Blango Greaves α",
     type: "Legs",
     slots: [1, 1, 0],
-    seriesSkill: "Blangonga's Spirit",
+    seriesSkills: ["Blangonga's Spirit"],
     groupSkill: "Fortifying Pelt",
     skills: {
       Agitator: 1,
@@ -1886,7 +1886,7 @@ export const Armors: Armor[] = [
     name: "Blango Helm β",
     type: "Helm",
     slots: [2, 1, 1],
-    seriesSkill: "Blangonga's Spirit",
+    seriesSkills: ["Blangonga's Spirit"],
     groupSkill: "Alluring Pelt",
     skills: {
       "Wide-Range": 2,
@@ -1896,7 +1896,7 @@ export const Armors: Armor[] = [
     name: "Blango Mail β",
     type: "Body",
     slots: [2, 0, 0],
-    seriesSkill: "Blangonga's Spirit",
+    seriesSkills: ["Blangonga's Spirit"],
     groupSkill: "Alluring Pelt",
     skills: {
       Agitator: 2,
@@ -1906,7 +1906,7 @@ export const Armors: Armor[] = [
     name: "Blango Vambraces β",
     type: "Arms",
     slots: [2, 2, 0],
-    seriesSkill: "Blangonga's Spirit",
+    seriesSkills: ["Blangonga's Spirit"],
     groupSkill: "Alluring Pelt",
     skills: {
       Counterstrike: 1,
@@ -1916,7 +1916,7 @@ export const Armors: Armor[] = [
     name: "Blango Coil β",
     type: "Waist",
     slots: [1, 1, 0],
-    seriesSkill: "Blangonga's Spirit",
+    seriesSkills: ["Blangonga's Spirit"],
     groupSkill: "Alluring Pelt",
     skills: {
       Agitator: 2,
@@ -1926,7 +1926,7 @@ export const Armors: Armor[] = [
     name: "Blango Greaves β",
     type: "Legs",
     slots: [2, 2, 0],
-    seriesSkill: "Blangonga's Spirit",
+    seriesSkills: ["Blangonga's Spirit"],
     groupSkill: "Alluring Pelt",
     skills: {
       Agitator: 1,
@@ -1936,7 +1936,7 @@ export const Armors: Armor[] = [
     name: "G. Doshaguma Helm α",
     type: "Helm",
     slots: [2, 1, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Heroics: 1,
@@ -1947,7 +1947,7 @@ export const Armors: Armor[] = [
     name: "G. Doshaguma Mail α",
     type: "Body",
     slots: [2, 1, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Constitution: 2,
@@ -1958,7 +1958,7 @@ export const Armors: Armor[] = [
     name: "G. Doshaguma Braces α",
     type: "Arms",
     slots: [1, 1, 1],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Heroics: 1,
@@ -1969,7 +1969,7 @@ export const Armors: Armor[] = [
     name: "G. Doshaguma Coil α",
     type: "Waist",
     slots: [2, 0, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Heroics: 2,
@@ -1980,7 +1980,7 @@ export const Armors: Armor[] = [
     name: "G. Doshaguma Greaves α",
     type: "Legs",
     slots: [2, 0, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Heroics: 1,
@@ -1991,7 +1991,7 @@ export const Armors: Armor[] = [
     name: "G. Doshaguma Helm β",
     type: "Helm",
     slots: [2, 2, 1],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Guardian's Protection",
     skills: {
       Heroics: 1,
@@ -2001,7 +2001,7 @@ export const Armors: Armor[] = [
     name: "G. Doshaguma Mail β",
     type: "Body",
     slots: [2, 2, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Guardian's Protection",
     skills: {
       Constitution: 2,
@@ -2011,7 +2011,7 @@ export const Armors: Armor[] = [
     name: "G. Doshaguma Braces β",
     type: "Arms",
     slots: [2, 2, 1],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Guardian's Protection",
     skills: {
       Heroics: 1,
@@ -2021,7 +2021,7 @@ export const Armors: Armor[] = [
     name: "G. Doshaguma Coil β",
     type: "Waist",
     slots: [2, 1, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Guardian's Protection",
     skills: {
       Heroics: 2,
@@ -2031,7 +2031,7 @@ export const Armors: Armor[] = [
     name: "G. Doshaguma Greaves β",
     type: "Legs",
     slots: [2, 1, 0],
-    seriesSkill: "Doshaguma's Might",
+    seriesSkills: ["Doshaguma's Might"],
     groupSkill: "Guardian's Protection",
     skills: {
       Heroics: 1,
@@ -2042,7 +2042,7 @@ export const Armors: Armor[] = [
     name: "G. Rathalos Helm α",
     type: "Helm",
     slots: [1, 1, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Guardian's Pulse",
     skills: {
       "Weakness Exploit": 1,
@@ -2053,7 +2053,7 @@ export const Armors: Armor[] = [
     name: "G. Rathalos Mail α",
     type: "Body",
     slots: [1, 0, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Guardian's Pulse",
     skills: {
       "Weakness Exploit": 1,
@@ -2064,7 +2064,7 @@ export const Armors: Armor[] = [
     name: "G. Rathalos Vambraces α",
     type: "Arms",
     slots: [2, 0, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Guardian's Pulse",
     skills: {
       "Weakness Exploit": 1,
@@ -2076,7 +2076,7 @@ export const Armors: Armor[] = [
     name: "G. Rathalos Coil α",
     type: "Waist",
     slots: [1, 1, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Guardian's Pulse",
     skills: {
       "Weakness Exploit": 1,
@@ -2087,7 +2087,7 @@ export const Armors: Armor[] = [
     name: "G. Rathalos Greaves α",
     type: "Legs",
     slots: [1, 0, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Guardian's Pulse",
     skills: {
       "Weakness Exploit": 1,
@@ -2098,7 +2098,7 @@ export const Armors: Armor[] = [
     name: "G. Rathalos Helm β",
     type: "Helm",
     slots: [2, 2, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Guardian's Protection",
     skills: {
       "Weakness Exploit": 1,
@@ -2108,7 +2108,7 @@ export const Armors: Armor[] = [
     name: "G. Rathalos Mail β",
     type: "Body",
     slots: [2, 0, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Guardian's Protection",
     skills: {
       "Weakness Exploit": 1,
@@ -2119,7 +2119,7 @@ export const Armors: Armor[] = [
     name: "G. Rathalos Vambraces β",
     type: "Arms",
     slots: [2, 1, 1],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Guardian's Protection",
     skills: {
       "Weakness Exploit": 1,
@@ -2129,7 +2129,7 @@ export const Armors: Armor[] = [
     name: "G. Rathalos Coil β",
     type: "Waist",
     slots: [2, 2, 1],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Guardian's Protection",
     skills: {
       Windproof: 1,
@@ -2139,7 +2139,7 @@ export const Armors: Armor[] = [
     name: "G. Rathalos Greaves β",
     type: "Legs",
     slots: [2, 0, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Guardian's Protection",
     skills: {
       "Weakness Exploit": 1,
@@ -2150,7 +2150,7 @@ export const Armors: Armor[] = [
     name: "Gravios Helm α",
     type: "Helm",
     slots: [2, 1, 0],
-    seriesSkill: "Gravios's Protection",
+    seriesSkills: ["Gravios's Protection"],
     groupSkill: "Scaling Prowess",
     skills: {
       "Peak Performance": 1,
@@ -2161,7 +2161,7 @@ export const Armors: Armor[] = [
     name: "Gravios Mail α",
     type: "Body",
     slots: [2, 1, 0],
-    seriesSkill: "Gravios's Protection",
+    seriesSkills: ["Gravios's Protection"],
     groupSkill: "Scaling Prowess",
     skills: {
       "Peak Performance": 1,
@@ -2172,7 +2172,7 @@ export const Armors: Armor[] = [
     name: "Gravios Vambraces α",
     type: "Arms",
     slots: [1, 0, 0],
-    seriesSkill: "Gravios's Protection",
+    seriesSkills: ["Gravios's Protection"],
     groupSkill: "Scaling Prowess",
     skills: {
       "Peak Performance": 2,
@@ -2183,7 +2183,7 @@ export const Armors: Armor[] = [
     name: "Gravios Coil α",
     type: "Waist",
     slots: [2, 0, 0],
-    seriesSkill: "Gravios's Protection",
+    seriesSkills: ["Gravios's Protection"],
     groupSkill: "Scaling Prowess",
     skills: {
       "Peak Performance": 1,
@@ -2194,7 +2194,7 @@ export const Armors: Armor[] = [
     name: "Gravios Greaves α",
     type: "Legs",
     slots: [2, 1, 0],
-    seriesSkill: "Gravios's Protection",
+    seriesSkills: ["Gravios's Protection"],
     groupSkill: "Scaling Prowess",
     skills: {
       "Tremor Resistance": 2,
@@ -2205,7 +2205,7 @@ export const Armors: Armor[] = [
     name: "Gravios Helm β",
     type: "Helm",
     slots: [2, 2, 0],
-    seriesSkill: "Gravios's Protection",
+    seriesSkills: ["Gravios's Protection"],
     groupSkill: "Scale Layering",
     skills: {
       "Peak Performance": 1,
@@ -2215,7 +2215,7 @@ export const Armors: Armor[] = [
     name: "Gravios Mail β",
     type: "Body",
     slots: [2, 2, 0],
-    seriesSkill: "Gravios's Protection",
+    seriesSkills: ["Gravios's Protection"],
     groupSkill: "Scale Layering",
     skills: {
       "Peak Performance": 1,
@@ -2226,7 +2226,7 @@ export const Armors: Armor[] = [
     name: "Gravios Vambraces β",
     type: "Arms",
     slots: [2, 0, 0],
-    seriesSkill: "Gravios's Protection",
+    seriesSkills: ["Gravios's Protection"],
     groupSkill: "Scale Layering",
     skills: {
       "Peak Performance": 2,
@@ -2236,7 +2236,7 @@ export const Armors: Armor[] = [
     name: "Gravios Coil β",
     type: "Waist",
     slots: [2, 1, 0],
-    seriesSkill: "Gravios's Protection",
+    seriesSkills: ["Gravios's Protection"],
     groupSkill: "Scale Layering",
     skills: {
       "Peak Performance": 1,
@@ -2247,7 +2247,7 @@ export const Armors: Armor[] = [
     name: "Gravios Greaves β",
     type: "Legs",
     slots: [2, 2, 0],
-    seriesSkill: "Gravios's Protection",
+    seriesSkills: ["Gravios's Protection"],
     groupSkill: "Scale Layering",
     skills: {
       "Tremor Resistance": 1,
@@ -2258,7 +2258,7 @@ export const Armors: Armor[] = [
     name: "G. Ebony Helm α",
     type: "Helm",
     slots: [0, 0, 0],
-    seriesSkill: "Ebony Odogaron's Power",
+    seriesSkills: ["Ebony Odogaron's Power"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Burst: 2,
@@ -2269,7 +2269,7 @@ export const Armors: Armor[] = [
     name: "G. Ebony Mail α",
     type: "Body",
     slots: [2, 0, 0],
-    seriesSkill: "Ebony Odogaron's Power",
+    seriesSkills: ["Ebony Odogaron's Power"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Earplugs: 1,
@@ -2280,7 +2280,7 @@ export const Armors: Armor[] = [
     name: "G. Ebony Braces α",
     type: "Arms",
     slots: [0, 0, 0],
-    seriesSkill: "Ebony Odogaron's Power",
+    seriesSkills: ["Ebony Odogaron's Power"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Burst: 2,
@@ -2291,7 +2291,7 @@ export const Armors: Armor[] = [
     name: "G. Ebony Coil α",
     type: "Waist",
     slots: [2, 0, 0],
-    seriesSkill: "Ebony Odogaron's Power",
+    seriesSkills: ["Ebony Odogaron's Power"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Burst: 1,
@@ -2302,7 +2302,7 @@ export const Armors: Armor[] = [
     name: "G. Ebony Greaves α",
     type: "Legs",
     slots: [2, 0, 0],
-    seriesSkill: "Ebony Odogaron's Power",
+    seriesSkills: ["Ebony Odogaron's Power"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Earplugs: 1,
@@ -2313,7 +2313,7 @@ export const Armors: Armor[] = [
     name: "G. Ebony Helm β",
     type: "Helm",
     slots: [2, 0, 0],
-    seriesSkill: "Ebony Odogaron's Power",
+    seriesSkills: ["Ebony Odogaron's Power"],
     groupSkill: "Guardian's Protection",
     skills: {
       Burst: 2,
@@ -2323,7 +2323,7 @@ export const Armors: Armor[] = [
     name: "G. Ebony Mail β",
     type: "Body",
     slots: [2, 2, 0],
-    seriesSkill: "Ebony Odogaron's Power",
+    seriesSkills: ["Ebony Odogaron's Power"],
     groupSkill: "Guardian's Protection",
     skills: {
       Earplugs: 1,
@@ -2333,7 +2333,7 @@ export const Armors: Armor[] = [
     name: "G. Ebony Braces β",
     type: "Arms",
     slots: [2, 1, 0],
-    seriesSkill: "Ebony Odogaron's Power",
+    seriesSkills: ["Ebony Odogaron's Power"],
     groupSkill: "Guardian's Protection",
     skills: {
       Burst: 1,
@@ -2344,7 +2344,7 @@ export const Armors: Armor[] = [
     name: "G. Ebony Coil β",
     type: "Waist",
     slots: [2, 1, 0],
-    seriesSkill: "Ebony Odogaron's Power",
+    seriesSkills: ["Ebony Odogaron's Power"],
     groupSkill: "Guardian's Protection",
     skills: {
       Burst: 1,
@@ -2354,7 +2354,7 @@ export const Armors: Armor[] = [
     name: "G. Ebony Greaves β",
     type: "Legs",
     slots: [2, 1, 0],
-    seriesSkill: "Ebony Odogaron's Power",
+    seriesSkills: ["Ebony Odogaron's Power"],
     groupSkill: "Guardian's Protection",
     skills: {
       Earplugs: 1,
@@ -2365,7 +2365,7 @@ export const Armors: Armor[] = [
     name: "Rathalos Helm α",
     type: "Helm",
     slots: [1, 1, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Scaling Prowess",
     skills: {
       "Evade Window": 2,
@@ -2376,7 +2376,7 @@ export const Armors: Armor[] = [
     name: "Rathalos Mail α",
     type: "Body",
     slots: [1, 0, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Scaling Prowess",
     skills: {
       "Adrenaline Rush": 2,
@@ -2387,7 +2387,7 @@ export const Armors: Armor[] = [
     name: "Rathalos Vambraces α",
     type: "Arms",
     slots: [1, 1, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Scaling Prowess",
     skills: {
       Constitution: 2,
@@ -2398,7 +2398,7 @@ export const Armors: Armor[] = [
     name: "Rathalos Coil α",
     type: "Waist",
     slots: [0, 0, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Scaling Prowess",
     skills: {
       "Adrenaline Rush": 2,
@@ -2409,7 +2409,7 @@ export const Armors: Armor[] = [
     name: "Rathalos Greaves α",
     type: "Legs",
     slots: [2, 0, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Scaling Prowess",
     skills: {
       "Evade Window": 2,
@@ -2420,7 +2420,7 @@ export const Armors: Armor[] = [
     name: "Rathalos Helm β",
     type: "Helm",
     slots: [2, 2, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Scale Layering",
     skills: {
       "Evade Window": 1,
@@ -2431,7 +2431,7 @@ export const Armors: Armor[] = [
     name: "Rathalos Mail β",
     type: "Body",
     slots: [1, 1, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Scale Layering",
     skills: {
       "Adrenaline Rush": 2,
@@ -2441,7 +2441,7 @@ export const Armors: Armor[] = [
     name: "Rathalos Vambraces β",
     type: "Arms",
     slots: [2, 1, 1],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Scale Layering",
     skills: {
       Constitution: 2,
@@ -2451,7 +2451,7 @@ export const Armors: Armor[] = [
     name: "Rathalos Coil β",
     type: "Waist",
     slots: [2, 0, 0],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Scale Layering",
     skills: {
       "Adrenaline Rush": 2,
@@ -2461,7 +2461,7 @@ export const Armors: Armor[] = [
     name: "Rathalos Greaves β",
     type: "Legs",
     slots: [2, 2, 1],
-    seriesSkill: "Rathalos's Flare",
+    seriesSkills: ["Rathalos's Flare"],
     groupSkill: "Scale Layering",
     skills: {
       "Evade Window": 2,
@@ -2471,7 +2471,7 @@ export const Armors: Armor[] = [
     name: "Xu Wu Helm α",
     type: "Helm",
     slots: [1, 0, 0],
-    seriesSkill: "Xu Wu's Vigor",
+    seriesSkills: ["Xu Wu's Vigor"],
     groupSkill: "Flexible Leathercraft",
     skills: {
       "Adrenaline Rush": 2,
@@ -2482,7 +2482,7 @@ export const Armors: Armor[] = [
     name: "Xu Wu Mail α",
     type: "Body",
     slots: [0, 0, 0],
-    seriesSkill: "Xu Wu's Vigor",
+    seriesSkills: ["Xu Wu's Vigor"],
     groupSkill: "Flexible Leathercraft",
     skills: {
       Heroics: 3,
@@ -2493,7 +2493,7 @@ export const Armors: Armor[] = [
     name: "Xu Wu Vambraces α",
     type: "Arms",
     slots: [2, 1, 0],
-    seriesSkill: "Xu Wu's Vigor",
+    seriesSkills: ["Xu Wu's Vigor"],
     groupSkill: "Flexible Leathercraft",
     skills: {
       Earplugs: 2,
@@ -2503,7 +2503,7 @@ export const Armors: Armor[] = [
     name: "Xu Wu Coil α",
     type: "Waist",
     slots: [2, 0, 0],
-    seriesSkill: "Xu Wu's Vigor",
+    seriesSkills: ["Xu Wu's Vigor"],
     groupSkill: "Flexible Leathercraft",
     skills: {
       Earplugs: 1,
@@ -2514,7 +2514,7 @@ export const Armors: Armor[] = [
     name: "Xu Wu Greaves α",
     type: "Legs",
     slots: [2, 1, 0],
-    seriesSkill: "Xu Wu's Vigor",
+    seriesSkills: ["Xu Wu's Vigor"],
     groupSkill: "Flexible Leathercraft",
     skills: {
       "Adrenaline Rush": 1,
@@ -2525,7 +2525,7 @@ export const Armors: Armor[] = [
     name: "Xu Wu Helm β",
     type: "Helm",
     slots: [2, 1, 0],
-    seriesSkill: "Xu Wu's Vigor",
+    seriesSkills: ["Xu Wu's Vigor"],
     groupSkill: "Buttery Leathercraft",
     skills: {
       "Adrenaline Rush": 2,
@@ -2535,7 +2535,7 @@ export const Armors: Armor[] = [
     name: "Xu Wu Mail β",
     type: "Body",
     slots: [1, 1, 0],
-    seriesSkill: "Xu Wu's Vigor",
+    seriesSkills: ["Xu Wu's Vigor"],
     groupSkill: "Buttery Leathercraft",
     skills: {
       Heroics: 3,
@@ -2545,7 +2545,7 @@ export const Armors: Armor[] = [
     name: "Xu Wu Vambraces β",
     type: "Arms",
     slots: [2, 2, 1],
-    seriesSkill: "Xu Wu's Vigor",
+    seriesSkills: ["Xu Wu's Vigor"],
     groupSkill: "Buttery Leathercraft",
     skills: {
       Earplugs: 1,
@@ -2555,7 +2555,7 @@ export const Armors: Armor[] = [
     name: "Xu Wu Coil β",
     type: "Waist",
     slots: [2, 1, 1],
-    seriesSkill: "Xu Wu's Vigor",
+    seriesSkills: ["Xu Wu's Vigor"],
     groupSkill: "Buttery Leathercraft",
     skills: {
       Earplugs: 1,
@@ -2566,7 +2566,7 @@ export const Armors: Armor[] = [
     name: "Xu Wu Greaves β",
     type: "Legs",
     slots: [2, 2, 1],
-    seriesSkill: "Xu Wu's Vigor",
+    seriesSkills: ["Xu Wu's Vigor"],
     groupSkill: "Buttery Leathercraft",
     skills: {
       "Adrenaline Rush": 1,
@@ -2666,7 +2666,7 @@ export const Armors: Armor[] = [
     name: "Dahaad Shardhelm α",
     type: "Helm",
     slots: [1, 0, 0],
-    seriesSkill: "Jin Dahaad's Revolt",
+    seriesSkills: ["Jin Dahaad's Revolt"],
     groupSkill: "Lord's Favor",
     skills: {
       Agitator: 1,
@@ -2677,7 +2677,7 @@ export const Armors: Armor[] = [
     name: "Dahaad Shardmail α",
     type: "Body",
     slots: [3, 1, 0],
-    seriesSkill: "Jin Dahaad's Revolt",
+    seriesSkills: ["Jin Dahaad's Revolt"],
     groupSkill: "Lord's Favor",
     skills: {
       Adaptability: 1,
@@ -2688,7 +2688,7 @@ export const Armors: Armor[] = [
     name: "Dahaad Shardbraces α",
     type: "Arms",
     slots: [0, 0, 0],
-    seriesSkill: "Jin Dahaad's Revolt",
+    seriesSkills: ["Jin Dahaad's Revolt"],
     groupSkill: "Lord's Favor",
     skills: {
       Agitator: 2,
@@ -2699,7 +2699,7 @@ export const Armors: Armor[] = [
     name: "Dahaad Shardcoil α",
     type: "Waist",
     slots: [1, 1, 0],
-    seriesSkill: "Jin Dahaad's Revolt",
+    seriesSkills: ["Jin Dahaad's Revolt"],
     groupSkill: "Lord's Favor",
     skills: {
       "Weakness Exploit": 1,
@@ -2710,7 +2710,7 @@ export const Armors: Armor[] = [
     name: "Dahaad Shardgreaves α",
     type: "Legs",
     slots: [1, 0, 0],
-    seriesSkill: "Jin Dahaad's Revolt",
+    seriesSkills: ["Jin Dahaad's Revolt"],
     groupSkill: "Lord's Favor",
     skills: {
       Agitator: 2,
@@ -2721,7 +2721,7 @@ export const Armors: Armor[] = [
     name: "Dahaad Shardhelm β",
     type: "Helm",
     slots: [2, 2, 0],
-    seriesSkill: "Jin Dahaad's Revolt",
+    seriesSkills: ["Jin Dahaad's Revolt"],
     groupSkill: "Lord's Fury",
     skills: {
       Agitator: 1,
@@ -2731,7 +2731,7 @@ export const Armors: Armor[] = [
     name: "Dahaad Shardmail β",
     type: "Body",
     slots: [3, 2, 0],
-    seriesSkill: "Jin Dahaad's Revolt",
+    seriesSkills: ["Jin Dahaad's Revolt"],
     groupSkill: "Lord's Fury",
     skills: {
       Adaptability: 1,
@@ -2742,7 +2742,7 @@ export const Armors: Armor[] = [
     name: "Dahaad Shardbraces β",
     type: "Arms",
     slots: [3, 0, 0],
-    seriesSkill: "Jin Dahaad's Revolt",
+    seriesSkills: ["Jin Dahaad's Revolt"],
     groupSkill: "Lord's Fury",
     skills: {
       Agitator: 1,
@@ -2753,7 +2753,7 @@ export const Armors: Armor[] = [
     name: "Dahaad Shardcoil β",
     type: "Waist",
     slots: [1, 1, 1],
-    seriesSkill: "Jin Dahaad's Revolt",
+    seriesSkills: ["Jin Dahaad's Revolt"],
     groupSkill: "Lord's Fury",
     skills: {
       "Weakness Exploit": 1,
@@ -2764,7 +2764,7 @@ export const Armors: Armor[] = [
     name: "Dahaad Shardgreaves β",
     type: "Legs",
     slots: [2, 0, 0],
-    seriesSkill: "Jin Dahaad's Revolt",
+    seriesSkills: ["Jin Dahaad's Revolt"],
     groupSkill: "Lord's Fury",
     skills: {
       Agitator: 2,
@@ -2774,7 +2774,7 @@ export const Armors: Armor[] = [
     name: "Rey Sandhelm α",
     type: "Helm",
     slots: [0, 0, 0],
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Favor",
     skills: {
       "Latent Power": 2,
@@ -2785,7 +2785,7 @@ export const Armors: Armor[] = [
     name: "Rey Sandmail α",
     type: "Body",
     slots: [1, 1, 0],
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Favor",
     skills: {
       "Maximum Might": 2,
@@ -2796,7 +2796,7 @@ export const Armors: Armor[] = [
     name: "Rey Sandbraces α",
     type: "Arms",
     slots: [2, 0, 0],
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Favor",
     skills: {
       "Latent Power": 2,
@@ -2807,7 +2807,7 @@ export const Armors: Armor[] = [
     name: "Rey Sandcoil α",
     type: "Waist",
     slots: [2, 0, 0],
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Favor",
     skills: {
       "Stamina Surge": 2,
@@ -2818,7 +2818,7 @@ export const Armors: Armor[] = [
     name: "Rey Sandgreaves α",
     type: "Legs",
     slots: [3, 0, 0],
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Favor",
     skills: {
       "Latent Power": 1,
@@ -2829,7 +2829,7 @@ export const Armors: Armor[] = [
     name: "Rey Sandhelm β",
     type: "Helm",
     slots: [3, 0, 0],
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Fury",
     skills: {
       "Latent Power": 1,
@@ -2840,7 +2840,7 @@ export const Armors: Armor[] = [
     name: "Rey Sandmail β",
     type: "Body",
     slots: [2, 1, 1],
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Fury",
     skills: {
       "Maximum Might": 1,
@@ -2851,7 +2851,7 @@ export const Armors: Armor[] = [
     name: "Rey Sandbraces β",
     type: "Arms",
     slots: [3, 0, 0],
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Fury",
     skills: {
       "Latent Power": 2,
@@ -2861,7 +2861,7 @@ export const Armors: Armor[] = [
     name: "Rey Sandcoil β",
     type: "Waist",
     slots: [3, 1, 0],
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Fury",
     skills: {
       "Stamina Surge": 1,
@@ -2872,7 +2872,7 @@ export const Armors: Armor[] = [
     name: "Rey Sandgreaves β",
     type: "Legs",
     slots: [3, 1, 1],
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Fury",
     skills: {
       "Latent Power": 1,
@@ -2882,7 +2882,7 @@ export const Armors: Armor[] = [
     name: "Duna Wildhelm α",
     type: "Helm",
     slots: [2, 1, 0],
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Favor",
     skills: {
       "Tool Specialist": 2,
@@ -2893,7 +2893,7 @@ export const Armors: Armor[] = [
     name: "Duna Wildmail α",
     type: "Body",
     slots: [3, 0, 0],
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Favor",
     skills: {
       "Tool Specialist": 2,
@@ -2904,7 +2904,7 @@ export const Armors: Armor[] = [
     name: "Duna Wildbraces α",
     type: "Arms",
     slots: [2, 1, 0],
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Favor",
     skills: {
       "Peak Performance": 2,
@@ -2915,7 +2915,7 @@ export const Armors: Armor[] = [
     name: "Duna Wildcoil α",
     type: "Waist",
     slots: [2, 1, 0],
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Favor",
     skills: {
       "Peak Performance": 2,
@@ -2926,7 +2926,7 @@ export const Armors: Armor[] = [
     name: "Duna Wildgreaves α",
     type: "Legs",
     slots: [3, 0, 0],
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Favor",
     skills: {
       "Peak Performance": 1,
@@ -2937,7 +2937,7 @@ export const Armors: Armor[] = [
     name: "Duna Wildhelm β",
     type: "Helm",
     slots: [3, 2, 0],
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Fury",
     skills: {
       "Tool Specialist": 1,
@@ -2948,7 +2948,7 @@ export const Armors: Armor[] = [
     name: "Duna Wildmail β",
     type: "Body",
     slots: [3, 1, 0],
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Fury",
     skills: {
       "Tool Specialist": 2,
@@ -2958,7 +2958,7 @@ export const Armors: Armor[] = [
     name: "Duna Wildbraces β",
     type: "Arms",
     slots: [3, 1, 1],
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Fury",
     skills: {
       "Peak Performance": 1,
@@ -2969,7 +2969,7 @@ export const Armors: Armor[] = [
     name: "Duna Wildcoil β",
     type: "Waist",
     slots: [3, 1, 0],
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Fury",
     skills: {
       "Peak Performance": 2,
@@ -2979,7 +2979,7 @@ export const Armors: Armor[] = [
     name: "Duna Wildgreaves β",
     type: "Legs",
     slots: [3, 1, 1],
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Fury",
     skills: {
       "Peak Performance": 1,
@@ -2989,7 +2989,7 @@ export const Armors: Armor[] = [
     name: "Udra Mirehelm α",
     type: "Helm",
     slots: [1, 1, 0],
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Favor",
     skills: {
       Resentment: 2,
@@ -3000,7 +3000,7 @@ export const Armors: Armor[] = [
     name: "Udra Miremail α",
     type: "Body",
     slots: [1, 1, 0],
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Favor",
     skills: {
       Resentment: 1,
@@ -3011,7 +3011,7 @@ export const Armors: Armor[] = [
     name: "Udra Mirebraces α",
     type: "Arms",
     slots: [2, 0, 0],
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Favor",
     skills: {
       "Speed Eating": 2,
@@ -3022,7 +3022,7 @@ export const Armors: Armor[] = [
     name: "Udra Mirecoil α",
     type: "Waist",
     slots: [2, 0, 0],
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Favor",
     skills: {
       Resentment: 2,
@@ -3033,7 +3033,7 @@ export const Armors: Armor[] = [
     name: "Udra Miregreaves α",
     type: "Legs",
     slots: [3, 0, 0],
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Favor",
     skills: {
       Burst: 1,
@@ -3044,7 +3044,7 @@ export const Armors: Armor[] = [
     name: "Udra Mirehelm β",
     type: "Helm",
     slots: [2, 2, 0],
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Fury",
     skills: {
       Resentment: 1,
@@ -3055,7 +3055,7 @@ export const Armors: Armor[] = [
     name: "Udra Miremail β",
     type: "Body",
     slots: [3, 1, 1],
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Fury",
     skills: {
       Resentment: 1,
@@ -3065,7 +3065,7 @@ export const Armors: Armor[] = [
     name: "Udra Mirebraces β",
     type: "Arms",
     slots: [3, 1, 0],
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Fury",
     skills: {
       "Speed Eating": 2,
@@ -3076,7 +3076,7 @@ export const Armors: Armor[] = [
     name: "Udra Mirecoil β",
     type: "Waist",
     slots: [3, 0, 0],
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Fury",
     skills: {
       Resentment: 2,
@@ -3086,7 +3086,7 @@ export const Armors: Armor[] = [
     name: "Udra Miregreaves β",
     type: "Legs",
     slots: [3, 1, 0],
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Fury",
     skills: {
       Burst: 1,
@@ -3097,7 +3097,7 @@ export const Armors: Armor[] = [
     name: "Gore Helm α",
     type: "Helm",
     slots: [2, 0, 0],
-    seriesSkill: "Gore Magala's Tyranny",
+    seriesSkills: ["Gore Magala's Tyranny"],
     groupSkill: "Scaling Prowess",
     skills: {
       "Evade Window": 2,
@@ -3108,7 +3108,7 @@ export const Armors: Armor[] = [
     name: "Gore Mail α",
     type: "Body",
     slots: [3, 0, 0],
-    seriesSkill: "Gore Magala's Tyranny",
+    seriesSkills: ["Gore Magala's Tyranny"],
     groupSkill: "Scaling Prowess",
     skills: {
       "Evade Window": 2,
@@ -3119,7 +3119,7 @@ export const Armors: Armor[] = [
     name: "Gore Vambraces α",
     type: "Arms",
     slots: [2, 1, 0],
-    seriesSkill: "Gore Magala's Tyranny",
+    seriesSkills: ["Gore Magala's Tyranny"],
     groupSkill: "Scaling Prowess",
     skills: {
       "Evade Window": 1,
@@ -3130,7 +3130,7 @@ export const Armors: Armor[] = [
     name: "Gore Coil α",
     type: "Waist",
     slots: [3, 1, 0],
-    seriesSkill: "Gore Magala's Tyranny",
+    seriesSkills: ["Gore Magala's Tyranny"],
     groupSkill: "Scaling Prowess",
     skills: {
       Constitution: 2,
@@ -3141,7 +3141,7 @@ export const Armors: Armor[] = [
     name: "Gore Greaves α",
     type: "Legs",
     slots: [3, 1, 0],
-    seriesSkill: "Gore Magala's Tyranny",
+    seriesSkills: ["Gore Magala's Tyranny"],
     groupSkill: "Scaling Prowess",
     skills: {
       Antivirus: 1,
@@ -3152,7 +3152,7 @@ export const Armors: Armor[] = [
     name: "Gore Helm β",
     type: "Helm",
     slots: [3, 1, 0],
-    seriesSkill: "Gore Magala's Tyranny",
+    seriesSkills: ["Gore Magala's Tyranny"],
     groupSkill: "Scale Layering",
     skills: {
       "Evade Window": 1,
@@ -3163,7 +3163,7 @@ export const Armors: Armor[] = [
     name: "Gore Mail β",
     type: "Body",
     slots: [3, 1, 0],
-    seriesSkill: "Gore Magala's Tyranny",
+    seriesSkills: ["Gore Magala's Tyranny"],
     groupSkill: "Scale Layering",
     skills: {
       "Evade Window": 2,
@@ -3173,7 +3173,7 @@ export const Armors: Armor[] = [
     name: "Gore Vambraces β",
     type: "Arms",
     slots: [2, 2, 0],
-    seriesSkill: "Gore Magala's Tyranny",
+    seriesSkills: ["Gore Magala's Tyranny"],
     groupSkill: "Scale Layering",
     skills: {
       "Evade Window": 1,
@@ -3184,7 +3184,7 @@ export const Armors: Armor[] = [
     name: "Gore Coil β",
     type: "Waist",
     slots: [3, 2, 0],
-    seriesSkill: "Gore Magala's Tyranny",
+    seriesSkills: ["Gore Magala's Tyranny"],
     groupSkill: "Scale Layering",
     skills: {
       Constitution: 2,
@@ -3194,7 +3194,7 @@ export const Armors: Armor[] = [
     name: "Gore Greaves β",
     type: "Legs",
     slots: [3, 1, 1],
-    seriesSkill: "Gore Magala's Tyranny",
+    seriesSkills: ["Gore Magala's Tyranny"],
     groupSkill: "Scale Layering",
     skills: {
       Antivirus: 1,
@@ -3205,7 +3205,7 @@ export const Armors: Armor[] = [
     name: "Arkvulcan Helm α",
     type: "Helm",
     slots: [0, 0, 0],
-    seriesSkill: "Arkveld's Hunger",
+    seriesSkills: ["Arkveld's Hunger"],
     groupSkill: "Fortifying Pelt",
     skills: {
       "Convert Element": 1,
@@ -3216,7 +3216,7 @@ export const Armors: Armor[] = [
     name: "Arkvulcan Mail α",
     type: "Body",
     slots: [2, 0, 0],
-    seriesSkill: "Arkveld's Hunger",
+    seriesSkills: ["Arkveld's Hunger"],
     groupSkill: "Fortifying Pelt",
     skills: {
       "Weakness Exploit": 1,
@@ -3227,7 +3227,7 @@ export const Armors: Armor[] = [
     name: "Arkvulcan Vambraces α",
     type: "Arms",
     slots: [2, 2, 0],
-    seriesSkill: "Arkveld's Hunger",
+    seriesSkills: ["Arkveld's Hunger"],
     groupSkill: "Fortifying Pelt",
     skills: {
       "Convert Element": 1,
@@ -3238,7 +3238,7 @@ export const Armors: Armor[] = [
     name: "Arkvulcan Coil α",
     type: "Waist",
     slots: [1, 0, 0],
-    seriesSkill: "Arkveld's Hunger",
+    seriesSkills: ["Arkveld's Hunger"],
     groupSkill: "Fortifying Pelt",
     skills: {
       "Weakness Exploit": 2,
@@ -3249,7 +3249,7 @@ export const Armors: Armor[] = [
     name: "Arkvulcan Greaves α",
     type: "Legs",
     slots: [2, 1, 0],
-    seriesSkill: "Arkveld's Hunger",
+    seriesSkills: ["Arkveld's Hunger"],
     groupSkill: "Fortifying Pelt",
     skills: {
       "Convert Element": 1,
@@ -3260,7 +3260,7 @@ export const Armors: Armor[] = [
     name: "Arkvulcan Helm β",
     type: "Helm",
     slots: [3, 2, 1],
-    seriesSkill: "Arkveld's Hunger",
+    seriesSkills: ["Arkveld's Hunger"],
     groupSkill: "Alluring Pelt",
     skills: {
       "Convert Element": 1,
@@ -3270,7 +3270,7 @@ export const Armors: Armor[] = [
     name: "Arkvulcan Mail β",
     type: "Body",
     slots: [3, 2, 0],
-    seriesSkill: "Arkveld's Hunger",
+    seriesSkills: ["Arkveld's Hunger"],
     groupSkill: "Alluring Pelt",
     skills: {
       "Weakness Exploit": 1,
@@ -3280,7 +3280,7 @@ export const Armors: Armor[] = [
     name: "Arkvulcan Vambraces β",
     type: "Arms",
     slots: [2, 2, 1],
-    seriesSkill: "Arkveld's Hunger",
+    seriesSkills: ["Arkveld's Hunger"],
     groupSkill: "Alluring Pelt",
     skills: {
       "Convert Element": 1,
@@ -3290,7 +3290,7 @@ export const Armors: Armor[] = [
     name: "Arkvulcan Coil β",
     type: "Waist",
     slots: [1, 1, 0],
-    seriesSkill: "Arkveld's Hunger",
+    seriesSkills: ["Arkveld's Hunger"],
     groupSkill: "Alluring Pelt",
     skills: {
       "Weakness Exploit": 2,
@@ -3301,7 +3301,7 @@ export const Armors: Armor[] = [
     name: "Arkvulcan Greaves β",
     type: "Legs",
     slots: [3, 1, 0],
-    seriesSkill: "Arkveld's Hunger",
+    seriesSkills: ["Arkveld's Hunger"],
     groupSkill: "Alluring Pelt",
     skills: {
       "Convert Element": 1,
@@ -3312,7 +3312,7 @@ export const Armors: Armor[] = [
     name: "G. Arkveld Helm α",
     type: "Helm",
     slots: [1, 1, 0],
-    seriesSkill: "Guardian Arkveld's Vitality",
+    seriesSkills: ["Guardian Arkveld's Vitality"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Flayer: 1,
@@ -3323,7 +3323,7 @@ export const Armors: Armor[] = [
     name: "G. Arkveld Mail α",
     type: "Body",
     slots: [0, 0, 0],
-    seriesSkill: "Guardian Arkveld's Vitality",
+    seriesSkills: ["Guardian Arkveld's Vitality"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Flayer: 2,
@@ -3334,7 +3334,7 @@ export const Armors: Armor[] = [
     name: "G. Arkveld Vambraces α",
     type: "Arms",
     slots: [1, 0, 0],
-    seriesSkill: "Guardian Arkveld's Vitality",
+    seriesSkills: ["Guardian Arkveld's Vitality"],
     groupSkill: "Guardian's Pulse",
     skills: {
       "Weakness Exploit": 2,
@@ -3345,7 +3345,7 @@ export const Armors: Armor[] = [
     name: "G. Arkveld Coil α",
     type: "Waist",
     slots: [0, 0, 0],
-    seriesSkill: "Guardian Arkveld's Vitality",
+    seriesSkills: ["Guardian Arkveld's Vitality"],
     groupSkill: "Guardian's Pulse",
     skills: {
       Flayer: 2,
@@ -3356,7 +3356,7 @@ export const Armors: Armor[] = [
     name: "G. Arkveld Greaves α",
     type: "Legs",
     slots: [0, 0, 0],
-    seriesSkill: "Guardian Arkveld's Vitality",
+    seriesSkills: ["Guardian Arkveld's Vitality"],
     groupSkill: "Guardian's Pulse",
     skills: {
       "Elemental Absorption": 2,
@@ -3367,7 +3367,7 @@ export const Armors: Armor[] = [
     name: "G. Arkveld Helm β",
     type: "Helm",
     slots: [3, 1, 0],
-    seriesSkill: "Guardian Arkveld's Vitality",
+    seriesSkills: ["Guardian Arkveld's Vitality"],
     groupSkill: "Guardian's Protection",
     skills: {
       Flayer: 1,
@@ -3378,7 +3378,7 @@ export const Armors: Armor[] = [
     name: "G. Arkveld Mail β",
     type: "Body",
     slots: [3, 0, 0],
-    seriesSkill: "Guardian Arkveld's Vitality",
+    seriesSkills: ["Guardian Arkveld's Vitality"],
     groupSkill: "Guardian's Protection",
     skills: {
       Flayer: 1,
@@ -3389,7 +3389,7 @@ export const Armors: Armor[] = [
     name: "G. Arkveld Vambraces β",
     type: "Arms",
     slots: [1, 1, 1],
-    seriesSkill: "Guardian Arkveld's Vitality",
+    seriesSkills: ["Guardian Arkveld's Vitality"],
     groupSkill: "Guardian's Protection",
     skills: {
       "Weakness Exploit": 2,
@@ -3399,7 +3399,7 @@ export const Armors: Armor[] = [
     name: "G. Arkveld Coil β",
     type: "Waist",
     slots: [2, 1, 0],
-    seriesSkill: "Guardian Arkveld's Vitality",
+    seriesSkills: ["Guardian Arkveld's Vitality"],
     groupSkill: "Guardian's Protection",
     skills: {
       Flayer: 2,
@@ -3409,7 +3409,7 @@ export const Armors: Armor[] = [
     name: "G. Arkveld Greaves β",
     type: "Legs",
     slots: [2, 1, 0],
-    seriesSkill: "Guardian Arkveld's Vitality",
+    seriesSkills: ["Guardian Arkveld's Vitality"],
     groupSkill: "Guardian's Protection",
     skills: {
       "Elemental Absorption": 1,
@@ -4015,7 +4015,7 @@ export const Armors: Armor[] = [
       "Recovery Speed": 2,
       Agitator: 1,
     },
-    seriesSkill: "Zoh Shia's Pulse",
+    seriesSkills: ["Zoh Shia's Pulse"],
     groupSkill: "Guardian's Pulse",
   },
   {
@@ -4026,7 +4026,7 @@ export const Armors: Armor[] = [
       Agitator: 2,
       Counterstrike: 1,
     },
-    seriesSkill: "Zoh Shia's Pulse",
+    seriesSkills: ["Zoh Shia's Pulse"],
     groupSkill: "Guardian's Pulse",
   },
   {
@@ -4037,7 +4037,7 @@ export const Armors: Armor[] = [
       "Elemental Absorption": 2,
       Coalescence: 1,
     },
-    seriesSkill: "Zoh Shia's Pulse",
+    seriesSkills: ["Zoh Shia's Pulse"],
     groupSkill: "Guardian's Pulse",
   },
   {
@@ -4048,7 +4048,7 @@ export const Armors: Armor[] = [
       Agitator: 2,
       Coalescence: 2,
     },
-    seriesSkill: "Zoh Shia's Pulse",
+    seriesSkills: ["Zoh Shia's Pulse"],
     groupSkill: "Guardian's Pulse",
   },
   {
@@ -4060,7 +4060,7 @@ export const Armors: Armor[] = [
       "Recovery Speed": 1,
       "Elemental Absorption": 1,
     },
-    seriesSkill: "Zoh Shia's Pulse",
+    seriesSkills: ["Zoh Shia's Pulse"],
     groupSkill: "Guardian's Pulse",
   },
   {
@@ -4071,7 +4071,7 @@ export const Armors: Armor[] = [
       Agitator: 1,
       "Recovery Speed": 1,
     },
-    seriesSkill: "Zoh Shia's Pulse",
+    seriesSkills: ["Zoh Shia's Pulse"],
     groupSkill: "Guardian's Protection",
   },
   {
@@ -4079,7 +4079,7 @@ export const Armors: Armor[] = [
     type: "Body",
     slots: [3, 0, 0],
     skills: { Agitator: 2 },
-    seriesSkill: "Zoh Shia's Pulse",
+    seriesSkills: ["Zoh Shia's Pulse"],
     groupSkill: "Guardian's Protection",
   },
   {
@@ -4089,7 +4089,7 @@ export const Armors: Armor[] = [
     skills: {
       "Elemental Absorption": 2,
     },
-    seriesSkill: "Zoh Shia's Pulse",
+    seriesSkills: ["Zoh Shia's Pulse"],
     groupSkill: "Guardian's Protection",
   },
   {
@@ -4100,7 +4100,7 @@ export const Armors: Armor[] = [
       Agitator: 2,
       Coalescence: 1,
     },
-    seriesSkill: "Zoh Shia's Pulse",
+    seriesSkills: ["Zoh Shia's Pulse"],
     groupSkill: "Guardian's Protection",
   },
   {
@@ -4112,7 +4112,7 @@ export const Armors: Armor[] = [
       "Recovery Speed": 1,
       "Elemental Absorption": 1,
     },
-    seriesSkill: "Zoh Shia's Pulse",
+    seriesSkills: ["Zoh Shia's Pulse"],
     groupSkill: "Guardian's Protection",
   },
   {
@@ -4135,7 +4135,7 @@ export const Armors: Armor[] = [
       "Aquatic/Oilsilt Mobility": 2,
       "Evade Extender": 1,
     },
-    seriesSkill: "Mizutsune's Prowess",
+    seriesSkills: ["Mizutsune's Prowess"],
     groupSkill: "Fortifying Pelt",
   },
   {
@@ -4146,7 +4146,7 @@ export const Armors: Armor[] = [
       Burst: 2,
       Constitution: 1,
     },
-    seriesSkill: "Mizutsune's Prowess",
+    seriesSkills: ["Mizutsune's Prowess"],
     groupSkill: "Fortifying Pelt",
   },
   {
@@ -4157,7 +4157,7 @@ export const Armors: Armor[] = [
       "Evade Extender": 2,
       "Evade Window": 2,
     },
-    seriesSkill: "Mizutsune's Prowess",
+    seriesSkills: ["Mizutsune's Prowess"],
     groupSkill: "Fortifying Pelt",
   },
   {
@@ -4168,7 +4168,7 @@ export const Armors: Armor[] = [
       Constitution: 2,
       Burst: 1,
     },
-    seriesSkill: "Mizutsune's Prowess",
+    seriesSkills: ["Mizutsune's Prowess"],
     groupSkill: "Fortifying Pelt",
   },
   {
@@ -4179,7 +4179,7 @@ export const Armors: Armor[] = [
       Burst: 2,
       "Peak Performance": 1,
     },
-    seriesSkill: "Mizutsune's Prowess",
+    seriesSkills: ["Mizutsune's Prowess"],
     groupSkill: "Fortifying Pelt",
   },
   {
@@ -4189,7 +4189,7 @@ export const Armors: Armor[] = [
     skills: {
       "Aquatic/Oilsilt Mobility": 2,
     },
-    seriesSkill: "Mizutsune's Prowess",
+    seriesSkills: ["Mizutsune's Prowess"],
     groupSkill: "Alluring Pelt",
   },
   {
@@ -4200,7 +4200,7 @@ export const Armors: Armor[] = [
       Burst: 1,
       Constitution: 1,
     },
-    seriesSkill: "Mizutsune's Prowess",
+    seriesSkills: ["Mizutsune's Prowess"],
     groupSkill: "Alluring Pelt",
   },
   {
@@ -4211,7 +4211,7 @@ export const Armors: Armor[] = [
       "Evade Window": 2,
       "Evade Extender": 1,
     },
-    seriesSkill: "Mizutsune's Prowess",
+    seriesSkills: ["Mizutsune's Prowess"],
     groupSkill: "Alluring Pelt",
   },
   {
@@ -4219,7 +4219,7 @@ export const Armors: Armor[] = [
     type: "Waist",
     slots: [3, 2, 1],
     skills: { Constitution: 2 },
-    seriesSkill: "Mizutsune's Prowess",
+    seriesSkills: ["Mizutsune's Prowess"],
     groupSkill: "Alluring Pelt",
   },
   {
@@ -4227,7 +4227,7 @@ export const Armors: Armor[] = [
     type: "Legs",
     slots: [3, 0, 0],
     skills: { Burst: 2 },
-    seriesSkill: "Mizutsune's Prowess",
+    seriesSkills: ["Mizutsune's Prowess"],
     groupSkill: "Alluring Pelt",
   },
   {
@@ -4238,7 +4238,7 @@ export const Armors: Armor[] = [
       Foray: 2,
       Adaptability: 1,
     },
-    seriesSkill: "Blossomdance Prayer",
+    seriesSkills: ["Blossomdance Prayer"],
     groupSkill: "Festival Spirit",
   },
   {
@@ -4249,7 +4249,7 @@ export const Armors: Armor[] = [
       Foray: 1,
       "Quick Sheathe": 1,
     },
-    seriesSkill: "Blossomdance Prayer",
+    seriesSkills: ["Blossomdance Prayer"],
     groupSkill: "Festival Spirit",
   },
   {
@@ -4260,7 +4260,7 @@ export const Armors: Armor[] = [
       Foray: 1,
       "Item Prolonger": 1,
     },
-    seriesSkill: "Blossomdance Prayer",
+    seriesSkills: ["Blossomdance Prayer"],
     groupSkill: "Festival Spirit",
   },
   {
@@ -4271,7 +4271,7 @@ export const Armors: Armor[] = [
       "Quick Sheathe": 2,
       Adaptability: 1,
     },
-    seriesSkill: "Blossomdance Prayer",
+    seriesSkills: ["Blossomdance Prayer"],
     groupSkill: "Festival Spirit",
   },
   {
@@ -4282,7 +4282,7 @@ export const Armors: Armor[] = [
       "Item Prolonger": 2,
       Foray: 1,
     },
-    seriesSkill: "Blossomdance Prayer",
+    seriesSkills: ["Blossomdance Prayer"],
     groupSkill: "Festival Spirit",
   },
   {
@@ -4294,7 +4294,7 @@ export const Armors: Armor[] = [
       "Maximum Might": 1,
       "Stamina Surge": 1,
     },
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4302,7 +4302,7 @@ export const Armors: Armor[] = [
     type: "Body",
     slots: [1, 0, 0],
     skills: { "Latent Power": 3 },
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4310,7 +4310,7 @@ export const Armors: Armor[] = [
     type: "Arms",
     slots: [3, 3, 0],
     skills: { "Evade Extender": 2 },
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4318,7 +4318,7 @@ export const Armors: Armor[] = [
     type: "Waist",
     slots: [0, 0, 0],
     skills: { "Latent Power": 2, "Maximum Might": 2 },
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4326,7 +4326,7 @@ export const Armors: Armor[] = [
     type: "Legs",
     slots: [3, 0, 0],
     skills: { "Stun Resistance": 3, "Stamina Surge": 2 },
-    seriesSkill: "Rey Dau's Voltage",
+    seriesSkills: ["Rey Dau's Voltage"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4402,7 +4402,7 @@ export const Armors: Armor[] = [
       "Maximum Might": 2,
       "Latent Power": 1,
     },
-    seriesSkill: "Leviathan's Fury",
+    seriesSkills: ["Leviathan's Fury"],
     groupSkill: "Flexible Leathercraft",
   },
   {
@@ -4414,7 +4414,7 @@ export const Armors: Armor[] = [
       "Weakness Exploit": 1,
       "Stamina Surge": 1,
     },
-    seriesSkill: "Leviathan's Fury",
+    seriesSkills: ["Leviathan's Fury"],
     groupSkill: "Flexible Leathercraft",
   },
   {
@@ -4426,7 +4426,7 @@ export const Armors: Armor[] = [
       "Weakness Exploit": 1,
       "Aquatic/Oilsilt Mobility": 1,
     },
-    seriesSkill: "Leviathan's Fury",
+    seriesSkills: ["Leviathan's Fury"],
     groupSkill: "Flexible Leathercraft",
   },
   {
@@ -4438,7 +4438,7 @@ export const Armors: Armor[] = [
       "Maximum Might": 1,
       "Aquatic/Oilsilt Mobility": 1,
     },
-    seriesSkill: "Leviathan's Fury",
+    seriesSkills: ["Leviathan's Fury"],
     groupSkill: "Flexible Leathercraft",
   },
   {
@@ -4450,7 +4450,7 @@ export const Armors: Armor[] = [
       "Latent Power": 1,
       "Thunder Resistance": 1,
     },
-    seriesSkill: "Leviathan's Fury",
+    seriesSkills: ["Leviathan's Fury"],
     groupSkill: "Flexible Leathercraft",
   },
   {
@@ -4460,7 +4460,7 @@ export const Armors: Armor[] = [
     skills: {
       "Maximum Might": 2,
     },
-    seriesSkill: "Leviathan's Fury",
+    seriesSkills: ["Leviathan's Fury"],
     groupSkill: "Buttery Leathercraft",
   },
   {
@@ -4471,7 +4471,7 @@ export const Armors: Armor[] = [
       "Weakness Exploit": 1,
       "Stamina Surge": 1,
     },
-    seriesSkill: "Leviathan's Fury",
+    seriesSkills: ["Leviathan's Fury"],
     groupSkill: "Buttery Leathercraft",
   },
   {
@@ -4482,7 +4482,7 @@ export const Armors: Armor[] = [
       "Stamina Surge": 2,
       "Weakness Exploit": 1,
     },
-    seriesSkill: "Leviathan's Fury",
+    seriesSkills: ["Leviathan's Fury"],
     groupSkill: "Buttery Leathercraft",
   },
   {
@@ -4493,7 +4493,7 @@ export const Armors: Armor[] = [
       "Weakness Exploit": 1,
       "Maximum Might": 1,
     },
-    seriesSkill: "Leviathan's Fury",
+    seriesSkills: ["Leviathan's Fury"],
     groupSkill: "Buttery Leathercraft",
   },
   {
@@ -4504,7 +4504,7 @@ export const Armors: Armor[] = [
       "Weakness Exploit": 2,
       "Latent Power": 1,
     },
-    seriesSkill: "Leviathan's Fury",
+    seriesSkills: ["Leviathan's Fury"],
     groupSkill: "Buttery Leathercraft",
   },
   {
@@ -4516,7 +4516,7 @@ export const Armors: Armor[] = [
       Counterstrike: 1,
       "Bleeding Resistance": 1,
     },
-    seriesSkill: "Seregios's Tenacity",
+    seriesSkills: ["Seregios's Tenacity"],
     groupSkill: "Scaling Prowess",
   },
   {
@@ -4528,7 +4528,7 @@ export const Armors: Armor[] = [
       Agitator: 1,
       Counterstrike: 1,
     },
-    seriesSkill: "Seregios's Tenacity",
+    seriesSkills: ["Seregios's Tenacity"],
     groupSkill: "Scaling Prowess",
   },
   {
@@ -4539,7 +4539,7 @@ export const Armors: Armor[] = [
       "Adrenaline Rush": 2,
       "Evade Extender": 1,
     },
-    seriesSkill: "Seregios's Tenacity",
+    seriesSkills: ["Seregios's Tenacity"],
     groupSkill: "Scaling Prowess",
   },
   {
@@ -4551,7 +4551,7 @@ export const Armors: Armor[] = [
       Agitator: 1,
       "Bleeding Resistance": 1,
     },
-    seriesSkill: "Seregios's Tenacity",
+    seriesSkills: ["Seregios's Tenacity"],
     groupSkill: "Scaling Prowess",
   },
   {
@@ -4563,7 +4563,7 @@ export const Armors: Armor[] = [
       Agitator: 1,
       "Bleeding Resistance": 1,
     },
-    seriesSkill: "Seregios's Tenacity",
+    seriesSkills: ["Seregios's Tenacity"],
     groupSkill: "Scaling Prowess",
   },
   {
@@ -4574,7 +4574,7 @@ export const Armors: Armor[] = [
       "Adrenaline Rush": 1,
       "Bleeding Resistance": 1,
     },
-    seriesSkill: "Seregios's Tenacity",
+    seriesSkills: ["Seregios's Tenacity"],
     groupSkill: "Scale Layering",
   },
   {
@@ -4585,7 +4585,7 @@ export const Armors: Armor[] = [
       "Evade Window": 2,
       Agitator: 1,
     },
-    seriesSkill: "Seregios's Tenacity",
+    seriesSkills: ["Seregios's Tenacity"],
     groupSkill: "Scale Layering",
   },
   {
@@ -4595,7 +4595,7 @@ export const Armors: Armor[] = [
     skills: {
       "Adrenaline Rush": 2,
     },
-    seriesSkill: "Seregios's Tenacity",
+    seriesSkills: ["Seregios's Tenacity"],
     groupSkill: "Scale Layering",
   },
   {
@@ -4606,7 +4606,7 @@ export const Armors: Armor[] = [
       Agitator: 1,
       "Evade Window": 1,
     },
-    seriesSkill: "Seregios's Tenacity",
+    seriesSkills: ["Seregios's Tenacity"],
     groupSkill: "Scale Layering",
   },
   {
@@ -4617,7 +4617,7 @@ export const Armors: Armor[] = [
       "Adrenaline Rush": 2,
       Agitator: 1,
     },
-    seriesSkill: "Seregios's Tenacity",
+    seriesSkills: ["Seregios's Tenacity"],
     groupSkill: "Scale Layering",
   },
   {
@@ -4637,7 +4637,7 @@ export const Armors: Armor[] = [
       "Peak Performance": 2,
       Earplugs: 1,
     },
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4645,7 +4645,7 @@ export const Armors: Armor[] = [
     type: "Body",
     slots: [0, 0, 0],
     skills: { "Peak Performance": 3, Earplugs: 2 },
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4653,7 +4653,7 @@ export const Armors: Armor[] = [
     type: "Arms",
     slots: [2, 0, 0],
     skills: { "Tool Specialist": 3, Agitator: 1 },
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4661,7 +4661,7 @@ export const Armors: Armor[] = [
     type: "Waist",
     slots: [3, 3, 0],
     skills: { "Tool Specialist": 2 },
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4669,7 +4669,7 @@ export const Armors: Armor[] = [
     type: "Legs",
     slots: [3, 1, 1],
     skills: { "Quick Sheathe": 3, Agitator: 1 },
-    seriesSkill: "Uth Duna's Cover",
+    seriesSkills: ["Uth Duna's Cover"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4677,7 +4677,7 @@ export const Armors: Armor[] = [
     type: "Helm",
     slots: [2, 0, 0],
     skills: { "Fire Resistance": 2, Bombardier: 2 },
-    seriesSkill: "Flamefete Prayer",
+    seriesSkills: ["Flamefete Prayer"],
     groupSkill: "Festival Spirit",
   },
   {
@@ -4685,7 +4685,7 @@ export const Armors: Armor[] = [
     type: "Body",
     slots: [2, 0, 0],
     skills: { Heroics: 1, Burst: 1 },
-    seriesSkill: "Flamefete Prayer",
+    seriesSkills: ["Flamefete Prayer"],
     groupSkill: "Festival Spirit",
   },
   {
@@ -4693,7 +4693,7 @@ export const Armors: Armor[] = [
     type: "Arms",
     slots: [1, 0, 0],
     skills: { Burst: 2 },
-    seriesSkill: "Flamefete Prayer",
+    seriesSkills: ["Flamefete Prayer"],
     groupSkill: "Festival Spirit",
   },
   {
@@ -4701,7 +4701,7 @@ export const Armors: Armor[] = [
     type: "Waist",
     slots: [0, 0, 0],
     skills: { "Blast Resistance": 2, Burst: 1, "Fire Resistance": 1 },
-    seriesSkill: "Flamefete Prayer",
+    seriesSkills: ["Flamefete Prayer"],
     groupSkill: "Festival Spirit",
   },
   {
@@ -4709,7 +4709,7 @@ export const Armors: Armor[] = [
     type: "Legs",
     slots: [1, 1, 0],
     skills: { Burst: 1, "Blast Resistance": 1, Bombardier: 1 },
-    seriesSkill: "Flamefete Prayer",
+    seriesSkills: ["Flamefete Prayer"],
     groupSkill: "Festival Spirit",
   },
   {
@@ -4717,7 +4717,7 @@ export const Armors: Armor[] = [
     type: "Helm",
     slots: [1, 1, 1],
     skills: { Burst: 3 },
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4725,7 +4725,7 @@ export const Armors: Armor[] = [
     type: "Body",
     slots: [3, 3, 0],
     skills: { Counterstrike: 2 },
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4733,7 +4733,7 @@ export const Armors: Armor[] = [
     type: "Arms",
     slots: [3, 1, 1],
     skills: { Resentment: 3 },
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4741,7 +4741,7 @@ export const Armors: Armor[] = [
     type: "Waist",
     slots: [2, 0, 0],
     skills: { Burst: 2, Ambush: 1 },
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4749,7 +4749,7 @@ export const Armors: Armor[] = [
     type: "Legs",
     slots: [2, 0, 0],
     skills: { Resentment: 2, Counterstrike: 1, "Speed Eating": 3 },
-    seriesSkill: "Nu Udra's Mutiny",
+    seriesSkills: ["Nu Udra's Mutiny"],
     groupSkill: "Lord's Soul",
   },
   {
@@ -4757,69 +4757,187 @@ export const Armors: Armor[] = [
     type: "Helm",
     slots: [1, 1, 0],
     skills: { Resentment: 2, "Maximum Might": 2 },
-    seriesSkill: "Soul of the Dark Knight",
+    seriesSkills: ["Soul of the Dark Knight"],
   },
   {
     name: "Bale Cuirass α",
     type: "Body",
     slots: [2, 0, 0],
     skills: { "Quick Sheathe": 2, "Latent Power": 2 },
-    seriesSkill: "Soul of the Dark Knight",
+    seriesSkills: ["Soul of the Dark Knight"],
   },
   {
     name: "Bale Gauntlets α",
     type: "Arms",
     slots: [3, 0, 0],
     skills: { Resentment: 1, "Latent Power": 1, "Maximum Might": 1 },
-    seriesSkill: "Soul of the Dark Knight",
+    seriesSkills: ["Soul of the Dark Knight"],
   },
   {
     name: "Bale Flanchard α",
     type: "Waist",
     slots: [3, 2, 1],
     skills: { Resentment: 1, Constitution: 2 },
-    seriesSkill: "Soul of the Dark Knight",
+    seriesSkills: ["Soul of the Dark Knight"],
   },
   {
     name: "Bale Sollerets α",
     type: "Legs",
     slots: [2, 0, 0],
     skills: { Resentment: 1, "Latent Power": 2 },
-    seriesSkill: "Soul of the Dark Knight",
+    seriesSkills: ["Soul of the Dark Knight"],
   },
   {
     name: "Omega Ear Cuffs α",
     type: "Helm",
     slots: [3, 2, 0],
-    seriesSkill: "Omega Resonance",
+    seriesSkills: ["Omega Resonance"],
     skills: { "Weakness Exploit": 1, "Divine Blessing": 1 },
   },
   {
     name: "Omega Suit α",
     type: "Body",
     slots: [3, 2, 0],
-    seriesSkill: "Omega Resonance",
+    seriesSkills: ["Omega Resonance"],
     skills: { Partbreaker: 2 },
   },
   {
     name: "Omega Vambraces α",
     type: "Arms",
     slots: [3, 2, 0],
-    seriesSkill: "Omega Resonance",
+    seriesSkills: ["Omega Resonance"],
     skills: { Agitator: 1, "Divine Blessing": 1 },
   },
   {
     name: "Omega Accessory α",
     type: "Waist",
     slots: [3, 2, 0],
-    seriesSkill: "Omega Resonance",
+    seriesSkills: ["Omega Resonance"],
     skills: { Burst: 1, "Divine Blessing": 1 },
   },
   {
     name: "Omega Boots α",
     type: "Legs",
     slots: [3, 2, 0],
-    seriesSkill: "Omega Resonance",
+    seriesSkills: ["Omega Resonance"],
     skills: { "Evade Window": 2 },
+  },
+  {
+    name: "Dahaad Shardhelm γ",
+    type: "Helm",
+    slots: [3, 3, 0],
+    skills: { Foray: 2 },
+    seriesSkills: ["Jin Dahaad's Revolt"],
+    groupSkill: "Lord's Soul",
+  },
+  {
+    name: "Dahaad Shardmail γ",
+    type: "Body",
+    slots: [2, 2, 0],
+    skills: { Agitator: 2 },
+    seriesSkills: ["Jin Dahaad's Revolt"],
+    groupSkill: "Lord's Soul",
+  },
+  {
+    name: "Dahaad Shardbraces γ",
+    type: "Arms",
+    slots: [2, 0, 0],
+    skills: { Coalescence: 3, "Weakness Exploit": 1 },
+    seriesSkills: ["Jin Dahaad's Revolt"],
+    groupSkill: "Lord's Soul",
+  },
+  {
+    name: "Dahaad Shardcoil γ",
+    type: "Waist",
+    slots: [1, 0, 0],
+    skills: { Agitator: 3, "Bind Resistance": 2 },
+    seriesSkills: ["Jin Dahaad's Revolt"],
+    groupSkill: "Lord's Soul",
+  },
+  {
+    name: "Dahaad Shardgreaves γ",
+    type: "Legs",
+    slots: [2, 0, 0],
+    skills: { "Weakness Exploit": 2, Foray: 1 },
+    seriesSkills: ["Jin Dahaad's Revolt"],
+    groupSkill: "Lord's Soul",
+  },
+  {
+    name: "Gogmazios Helm α",
+    type: "Helm",
+    slots: [3, 1, 0],
+    skills: { "Peak Performance": 2, "Elemental Absorption": 2 },
+    seriesSkills: ["Zoh Shia's Pulse", "Gogmapocalypse"],
+  },
+  {
+    name: "Gogmazios Mail α",
+    type: "Body",
+    slots: [3, 2, 0],
+    skills: {
+      "Adrenaline Rush": 2,
+      "Speed Eating": 2,
+      "Aquatic/Oilsilt Mobility": 1,
+    },
+    seriesSkills: ["Xu Wu's Vigor", "Gogmapocalypse"],
+  },
+  {
+    name: "Gogmazios Braces α",
+    type: "Arms",
+    slots: [2, 1, 0],
+    skills: { "Maximum Might": 2, Agitator: 1 },
+    seriesSkills: ["Fulgur Anjanath's Will", "Gogmapocalypse"],
+  },
+  {
+    name: "Gogmazios Coil α",
+    type: "Waist",
+    slots: [2, 1, 1],
+    skills: { Burst: 2, "Peak Performance": 1 },
+    seriesSkills: ["Ebony Odogaron's Power", "Gogmapocalypse"],
+  },
+  {
+    name: "Gogmazios Miregreaves α",
+    type: "Legs",
+    slots: [3, 2, 1],
+    skills: { "Peak Performance": 2, Agitator: 1 },
+    seriesSkills: ["Doshaguma's Might", "Gogmapocalypse"],
+  },
+  {
+    name: "Gogmazios Helm β",
+    type: "Helm",
+    slots: [3, 1, 0],
+    skills: { "Peak Performance": 2, "Elemental Absorption": 2 },
+    seriesSkills: ["Guardian Arkveld's Vitality", "Gogmapocalypse"],
+  },
+  {
+    name: "Gogmazios Mail β",
+    type: "Body",
+    slots: [3, 2, 0],
+    skills: {
+      "Adrenaline Rush": 2,
+      "Speed Eating": 2,
+      "Aquatic/Oilsilt Mobility": 1,
+    },
+    seriesSkills: ["Rathalos's Flare", "Gogmapocalypse"],
+  },
+  {
+    name: "Gogmazios Braces β",
+    type: "Arms",
+    slots: [2, 1, 0],
+    skills: { "Maximum Might": 2, Agitator: 1 },
+    seriesSkills: ["Blangonga's Spirit", "Gogmapocalypse"],
+  },
+  {
+    name: "Gogmazios Coil β",
+    type: "Waist",
+    slots: [2, 1, 1],
+    skills: { Burst: 2, "Peak Performance": 1 },
+    seriesSkills: ["Mizutsune's Prowess", "Gogmapocalypse"],
+  },
+  {
+    name: "Gogmazios Miregreaves β",
+    type: "Legs",
+    slots: [3, 2, 1],
+    skills: { "Peak Performance": 2, Agitator: 1 },
+    seriesSkills: ["Gravios's Protection", "Gogmapocalypse"],
   },
 ];

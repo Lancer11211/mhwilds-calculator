@@ -419,7 +419,7 @@ export type Armor = Equip & {
   type: ArmorType;
   slots: [SlotLevel, SlotLevel, SlotLevel];
   groupSkill?: SkillName;
-  seriesSkill?: SkillName;
+  seriesSkills?: SkillName[];
   defense?: number;
   fireRes?: number;
   iceRes?: number;

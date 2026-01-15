@@ -6,6 +6,7 @@ import {
   AttacksCard,
   BuffsCard,
   EquipmentCard,
+  Notice,
   // Notice,
   SkillPointCard,
   StatsCard,

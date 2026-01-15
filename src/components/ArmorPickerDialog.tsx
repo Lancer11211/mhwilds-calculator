@@ -5,7 +5,6 @@ import { Armors } from "@/data/armor";
 import { Armor, ArmorType } from "@/types";
 import { cn } from "@/utils";
 import { Picker } from "./Picker";
-import { Table, TableCell, TableHeadRow, TableRow } from "./Table";
 import { TextInput } from "./TextInput";
 import { Button } from "./ui/Button";
 import { Dialog, DialogContent, DialogTrigger } from "./ui/Dialog";
@@ -26,11 +25,11 @@ export const ArmorPickerDialog = ({
     return Armors.filter((a) => {
       if (a.type !== type) return false;
       if (filter) {
-        const { name, groupSkill, seriesSkill, skills } = a;
+        const { name, groupSkill, seriesSkills, skills } = a;
         const search = [
           name,
           groupSkill,
-          seriesSkill,
+          ...(seriesSkills ?? []),
           ...Object.entries(skills).map(([k, v]) => `${k} ${v}`),
         ]
           .filter((k) => !!k)
@@ -121,10 +120,16 @@ export const ArmorPickerDialog = ({
                   ))}
                 </div>
               </div>
-              {o.seriesSkill && (
+              {o.seriesSkills && (
                 <div className={rowCn}>
                   <div className="text-tertiary flex-1">Series</div>
-                  <div className="flex-3">{o.seriesSkill}</div>
+                  <div className="flex-3">
+                    {o.seriesSkills?.map((ss) => (
+                      <p key={ss} className="text-sm">
+                        {ss}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               )}
               {o.groupSkill && (
@@ -143,43 +148,6 @@ export const ArmorPickerDialog = ({
               </div>
             </div>
           ))}
-        </div>
-        <div className="md:show hidden overflow-auto">
-          <Table>
-            <thead>
-              <TableHeadRow>
-                <TableCell className={"w-2/5"}>Name</TableCell>
-                <TableCell className={"w-2/5"}>Skills</TableCell>
-                <TableCell className={"w-1/5"}>Slots</TableCell>
-              </TableHeadRow>
-            </thead>
-            <tbody>
-              {filteredOptions.map((a) => (
-                <TableRow
-                  key={a.name}
-                  className={cn(a.name === value?.name && "bg-content-alt")}
-                  onClick={() => {
-                    setValue(a);
-                    setOpen(false);
-                  }}
-                >
-                  <TableCell>{a.name}</TableCell>
-                  <TableCell>
-                    {Object.entries(a.skills).map(([k, v]) => (
-                      <p key={k}>
-                        {k} {v}
-                      </p>
-                    ))}
-                    {a.groupSkill && <p>{a.groupSkill} 1</p>}
-                    {a.seriesSkill && <p>{a.seriesSkill} 1</p>}
-                  </TableCell>
-                  <TableCell>
-                    {a.slots.filter((s) => s > 0).join(", ")}
-                  </TableCell>
-                </TableRow>
-              ))}
-            </tbody>
-          </Table>
         </div>
       </DialogContent>
     </Dialog>
