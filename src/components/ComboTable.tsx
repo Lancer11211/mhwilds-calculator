@@ -2,11 +2,31 @@ import { useMemo } from "react";
 import { round } from "@/model";
 import { useComputed } from "@/store/builder";
 import { useCombo } from "@/store/combo";
+import { ComboModeOption, DynamicAttack, SnapshotAttack } from "@/types";
 import { Table, TableCell, TableHeadRow, TableRow } from "./Table";
 
-export const ComboTable = ({ disabled }: { disabled?: boolean }) => {
-  const { mode, dynamic, snapshot, removeDynamic, removeSnapshot } = useCombo();
+export const ComboTable = ({
+  disabled,
+  mode: modeProp,
+  dynamic: dynamicProp,
+  snapshot: snapshotProp,
+  onRemove,
+}: {
+  disabled?: boolean;
+  mode?: ComboModeOption;
+  dynamic?: DynamicAttack[];
+  snapshot?: SnapshotAttack[];
+  onRemove?: (index: number) => void;
+}) => {
+  const comboStore = useCombo();
   const { calculateAtk } = useComputed();
+
+  // Use props if provided, otherwise fall back to store
+  const mode = modeProp ?? comboStore.mode;
+  const dynamic = dynamicProp ?? comboStore.dynamic;
+  const snapshot = snapshotProp ?? comboStore.snapshot;
+  const removeDynamic = onRemove ?? comboStore.removeDynamic;
+  const removeSnapshot = onRemove ?? comboStore.removeSnapshot;
 
   const dynamicWithDamage = useMemo(() => {
     return dynamic.map(({ count, ...a }, i) => ({

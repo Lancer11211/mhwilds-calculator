@@ -5,6 +5,8 @@ import {
   ArtianTypeOptions,
   ArtianUpgradeOptions,
   ComboModeOptions,
+  GogmaziosFocusOptions,
+  GogmaziosReinforcementLevels,
 } from "./types";
 
 export const importSchema = z.object({
@@ -15,8 +17,22 @@ export const importSchema = z.object({
   artian: z
     .object({
       element: z.enum(ArtianTypeOptions),
-      infusions: z.array(z.enum(ArtianInfusionOptions).optional()).max(3),
-      upgrades: z.array(z.enum(ArtianUpgradeOptions).optional()).max(5),
+      infusions: z.array(z.enum(ArtianInfusionOptions)).max(3).optional(),
+      upgrades: z.array(z.enum(ArtianUpgradeOptions)).max(5).optional(),
+    })
+    .optional(),
+  gogmazios: z
+    .object({
+      focus: z.enum(GogmaziosFocusOptions),
+      element: z.enum(ArtianTypeOptions),
+      infusions: z.array(z.enum(ArtianInfusionOptions)).max(3).optional(),
+      reinforcements: z.array(
+        z.object({
+          type: z.enum(ArtianUpgradeOptions),
+          level: z.enum(GogmaziosReinforcementLevels),
+        })
+      ).max(5).optional(),
+      groupSkills: z.array(z.string()).max(2).optional(),
     })
     .optional(),
   helm: z.string().optional(),

@@ -1,7 +1,7 @@
 "use client";
 
 import { DownloadIcon } from "lucide-react";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useState } from "react";
 import { ZodError } from "zod";
 import { CombinedBuffs } from "@/data";
 import { Armors } from "@/data/armor";
@@ -9,9 +9,8 @@ import Attacks, { OtherAttacks } from "@/data/attacks";
 import { Charms } from "@/data/charms";
 import { Decorations } from "@/data/decorations";
 import Weapons from "@/data/weapons";
-import { useBuild } from "@/store/builder";
+import { useBuild, useComputed } from "@/store/builder";
 import { useCombo } from "@/store/combo";
-import { useAddAttack } from "@/store/combo";
 import text from "@/text";
 import { Armor, Decoration, Weapon } from "@/types";
 import { importSchema } from "@/zod";
@@ -34,6 +33,11 @@ export const ImportDialog = () => {
     setArtianType,
     setArtianInfusion,
     setArtianUpgrade,
+    setGogmaziosFocus,
+    setGogmaziosType,
+    setGogmaziosInfusion,
+    setGogmaziosReinforcement,
+    setGogmaziosGroupSkill,
     setHelmDecoration,
     setBodyDecoration,
     setArmsDecoration,
@@ -49,7 +53,7 @@ export const ImportDialog = () => {
   } = useBuild();
 
   const comboStore = useCombo();
-  const addAttack = useAddAttack();
+  const { calculateAtk } = useComputed();
 
   const [open, setOpen] = useState(false);
   const [data, setData] = useState("");
@@ -192,8 +196,16 @@ export const ImportDialog = () => {
 
         if (w.artian && d.artian) {
           setArtianType(d.artian.element);
-          d.artian.infusions.forEach((u, i) => setArtianInfusion(i, u));
-          d.artian.upgrades.forEach((u, i) => setArtianUpgrade(i, u));
+          d.artian.infusions?.forEach((u, i) => setArtianInfusion(i, u));
+          d.artian.upgrades?.forEach((u, i) => setArtianUpgrade(i, u));
+        }
+
+        if (w.gogmazios && d.gogmazios) {
+          setGogmaziosFocus(d.gogmazios.focus);
+          setGogmaziosType(d.gogmazios.element);
+          d.gogmazios.infusions?.forEach((u, i) => setGogmaziosInfusion(i, u));
+          d.gogmazios.reinforcements?.forEach((r, i) => setGogmaziosReinforcement(i, r));
+          d.gogmazios.groupSkills?.forEach((s, i) => setGogmaziosGroupSkill(i, s));
         }
 
         if (d.weaponSlots) {
@@ -213,7 +225,8 @@ export const ImportDialog = () => {
 
       if (d.target) setTarget(d.target);
 
-      if (d.combo && d.combo.attacks && w) {
+      // Import combo attacks
+      if (w && d.combo && d.combo.attacks && d.combo.attacks.length > 0) {
         comboStore.reset();
         comboStore.setComboMode(d.combo.mode);
 
@@ -223,7 +236,13 @@ export const ImportDialog = () => {
         d.combo.attacks.forEach((attackName) => {
           const attack = allAttacks.find((a) => a.name === attackName);
           if (attack) {
-            addAttack(attack);
+            // Use comboStore methods directly with the imported mode
+            if (d.combo!.mode === "Dynamic") {
+              comboStore.addDynamic(attack);
+            } else {
+              const { hit, crit, avg } = calculateAtk(attack);
+              comboStore.addSnapshot({ ...attack, hit, crit, avg });
+            }
           } else {
             warnings.push(`Attack '${attackName}' not found for ${w.type}.`);
           }
@@ -271,6 +290,11 @@ export const ImportDialog = () => {
     setArtianType,
     setArtianInfusion,
     setArtianUpgrade,
+    setGogmaziosFocus,
+    setGogmaziosType,
+    setGogmaziosInfusion,
+    setGogmaziosReinforcement,
+    setGogmaziosGroupSkill,
     setHelmDecoration,
     setBodyDecoration,
     setArmsDecoration,
@@ -283,7 +307,7 @@ export const ImportDialog = () => {
     setUptimes,
     setTarget,
     comboStore,
-    addAttack,
+    calculateAtk,
   ]);
 
   return (
