@@ -405,18 +405,13 @@ export const useComputed = () => {
   // Start equipment reduction from gogmaziosGroupSkillsAcc so values accumulate
   const groupPoints = {
     ...equipment.reduce<Record<SkillName, number>>((acc, i) => {
-      const { groupSkill, seriesSkill, seriesSkills } = i;
+      const { groupSkill, seriesSkills } = i;
       if (groupSkill) {
         acc[groupSkill] = acc[groupSkill] ? acc[groupSkill] + 1 : 1;
       }
-      if (seriesSkill) {
-        acc[seriesSkill] = acc[seriesSkill] ? acc[seriesSkill] + 1 : 1;
-      }
-      // Handle multiple series skills
-      if (seriesSkills) {
-        seriesSkills.forEach((skill) => {
-          acc[skill] = acc[skill] ? acc[skill] + 1 : 1;
-        });
+      // Handle series skills
+      for (const ss of seriesSkills ?? []) {
+        acc[ss] = acc[ss] ? acc[ss] + 1 : 1;
       }
       return acc;
     }, gogmaziosGroupSkillsAcc),

@@ -202,6 +202,14 @@ export type BuffValues = {
   status?: number;
   statusMul?: number;
   bowgunOffset?: boolean;
+  defense?: number;
+  defenseMul?: number;
+  fireRes?: number;
+  iceRes?: number;
+  thunderRes?: number;
+  waterRes?: number;
+  dragonRes?: number;
+  allRes?: number;
 };
 
 export type Buff = BuffValues & {
@@ -412,8 +420,13 @@ export type Armor = Equip & {
   type: ArmorType;
   slots: [SlotLevel, SlotLevel, SlotLevel];
   groupSkill?: SkillName;
-  seriesSkill?: SkillName;
   seriesSkills?: SkillName[];
+  defense?: number;
+  fireRes?: number;
+  iceRes?: number;
+  thunderRes?: number;
+  waterRes?: number;
+  dragonRes?: number;
 };
 
 export type Decoration = Equip & {
