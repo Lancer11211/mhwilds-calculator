@@ -1042,13 +1042,6 @@ export const SeriesSkills: Record<SkillName, SeriesSkill> = {
       },
     },
   },
-  "Gogmapocalypse": {
-    uptime: true,
-    levels: {
-      2: { name: "Mutual Hostility I", element: 20, elementMul: 1.2, },
-      4: { name: "Mutual Hostility II", element: 40, elementMul: 1.3, },
-    },
-  },
   "Seregios's Tenacity": {
     uptime: true,
     levels: {
